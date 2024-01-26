@@ -116,11 +116,16 @@ Logical Operators allow you to combine or change the results of comparisons.
 ```
 (@) Explain, what does the code on each line above do? 
 
->
+>5 is equal to 10 returns FALSE
+>3 is less than 4 returns TRUE
+>5 is not equal to 10 returns TRUE
+>5 is not equal to 5 returns FALSE
+>3 is equal to 4 or 3 returns TRUE
+>3 is not equal to 4 and 3 is not equal to 5 returns TRUE
 
 (@) Create your own comparison. 
 ```{r}
-
+7 != 4 + 4 
 ```
 
 ---
@@ -156,13 +161,13 @@ Whatever you prefer, be consistent and your future self will thank you when your
 (@) You try, create a variable and assign it a number: 
 
 ```{r}
-
+NumbersOfDaysUntilThePoolOpens <- 105
 ```
 
 (@) Can you assign a string to a variable?
 
 ```{r}
-
+"All My Children" <- 12789
 ```
 
 Once we've assigned a variable we can use that variable to run calculations just like we did with raw numbers.
@@ -184,22 +189,28 @@ My.Calculation <- (x + x)*10
 
 (@) You try. Assign a number to x and a number to y. Add those two numbers together.
 ```{r}
-
+x <- 6
+y <- 4
+x + y
 ```
 
 (@) Can you take `x` and `y` and multiply the result by 5? 
 ```{r}
-
+(x + y) * 5
 ```
 
 (@) Try creating two variables with names other than `x ` and `y`. Descriptive names tend to be more useful. Can you multiply the contents of your variables? 
 ```{r}
-
+NumberOfTilesLong <- 8
+NumberOfTilesWide <- 4
+NumberOfTilesLong * NumberOfTilesWide
 ```
 
 (@) Try creating two variables that store strings. Can you concatenate those two variables together? 
 ```{r}
-
+h <- "Harry"
+p <- "Potter"
+paste (h, p)
 ```
 
 ### Vectors
