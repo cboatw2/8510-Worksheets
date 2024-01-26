@@ -1,7 +1,7 @@
 ---
 title: 'Worksheet 1: R Basics'
-author: ""
-date: ""
+author: "Candy Boatwright"
+date: "January 31, 2024"
 ---
 _This is the first in a series of worksheets for History 8510 at Clemson University. The goal of these worksheets is simple: practice, practice, practice. The worksheet introduces concepts and techniques and includes prompts for you to practice in this interactive document. When you are finished, you should change the author name (above), knit your document to a pdf, and upload it to canvas._
 
@@ -27,9 +27,15 @@ Numbers can be used to do arithmetic.
 ```
 
 (@) You try, multiple two numbers. 
+```{r}
+11*3
+```
 
 
 (@) Can you multiply two numbers and then divide by the result? 
+```{r}
+4*12/48
+```
 
 The next type of value is a **string**. Strings are lines of text. Sometimes these are referred to as character vectors. To create a string, you add text between two quotation marks. For example: 
 ```{r}
@@ -38,7 +44,7 @@ The next type of value is a **string**. Strings are lines of text. Sometimes the
 
 (@) Try to create your own string.
 ```{r}
-
+"More coffee, please"
 ```
 
 You can't add strings using `+` like you can numbers. But there is a function called `paste()` which concatenates character vectors into one. This function is _very_ useful and one you'll use a lot in a variety of circumstances. Here's what that looks like: 
@@ -49,12 +55,12 @@ paste("Hello", "Clemson Graduate Students")
 
 (@) Try it, add two strings together like the above example. 
 ```{r}
-
+paste ("Hardin", "Hall")
 ```
 
 (@) Can you explain what happened in 2-3 sentences? 
 
-> 
+> The paste function places strings together seperated by a space. Whatever character vectors are placed inside of the quotation marks within the paste function are generated into a single output of characters.
 
 The last type are **logical** values like `TRUE` and `FALSE`. (Note that these are all caps.)
 
@@ -71,6 +77,22 @@ These logical values are really useful for testing a statement and comparing val
 3 < 4
 ```
 3 is indeed less than 4 so the return value is `TRUE`. Here are a few more examples:
+
+```{r}
+5 > 7
+```
+
+```{r}
+6 = 6
+```
+
+```{r}
+7 + 4 > 3 + 5
+```
+
+```{r}
+67 > -4
+```
 
 R also has relational operators and logical operators. Relational operators test how one object relates to another. We've been using some of these above. 
 
