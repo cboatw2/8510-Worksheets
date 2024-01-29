@@ -245,7 +245,7 @@ my.numbers * 2
 ```
 (@) Explain in a few sentences, what happened in the code above?
 
->
+>The four numbers 2, 4, 6, 8 were stored as the 'my.numbers' vectors. When my.numbers was multipled by 2, each of the stored numbers was multipled by 2. So running 'my.numbers * 2' returned 4, 8, 12, 16. This did not change the original numbers stored in the vector.
 
 Lets try something slightly different. 
 ```{r}
@@ -253,12 +253,17 @@ my.numbers[3] * 2
 ```
 (@) Explain in a few sentences, what happened in the code above? 
 
->
+>The number stored in the third location in the vector 'my.numbers', 6, is multipled by 2. Because the previous code did not alter the original numbers stored in my.numbers the answer returned is 12.
 
 (@) You try, create a list of five items and store it in a descriptive variable. 
 ```{r}
-
+NFLPlayoffTeams2024 <- c("Kansas City Chiefs", "Baltimore Ravens", "San Francisco 49ers", "Detroit Lions")
 ```
+
+```{r}
+NFLPlayoffTeams2024 [c(1,3)]
+```
+>I used [c()] to recall and combine multiple items in the vector list. In this case, the two NFL teams advancing to Super Bowl LVIII.
 
 
 ### Built In Functions
@@ -289,14 +294,14 @@ We can ask R to pull up the documentation like this:
 
 (@) Now you try, find the documentation for the function  `signif()`.
 ```{r}
-
+?signif()
 ```
 
 In real life, you typically you wouldn't want to store this code in your script file. You probably don't need to pull up the documentation for the function every time you run that piece of code. But for the purposes of this worksheet we're adding it to our `.Rmd` document. 
 
 (@) Use the console to find the documentation for `floor()`? Try it and then tell me, what does that function do? 
 
->
+>It rounds down the decimal to the nearest whole number.
 
 ### Data Frames & Packages
 
@@ -334,7 +339,7 @@ What is going on here? Each line within this function (x,y,z) creates a new colu
 
 (@) What is going on in row z? Can you explain the logic here?
 
->
+>Row z takes the number in each row of column x, multiples by 2, then adds the number in row y. The solution is stored in the corresponding row in column z.
 
 
 ## Loading Dataframes from Packages
