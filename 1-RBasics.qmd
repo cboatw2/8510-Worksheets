@@ -83,7 +83,7 @@ These logical values are really useful for testing a statement and comparing val
 ```
 
 ```{r}
-6 = 6
+6 != 7
 ```
 
 ```{r}
