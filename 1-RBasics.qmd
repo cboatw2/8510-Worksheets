@@ -361,7 +361,7 @@ Run `help(package="DigitalMethodsData")` in your console to pull up a list of da
 
 For demonstration purposes we'll use the `gayguides` data here. Pull up the help documentation for this dataset. What does the documentation tell you abou the scope of this dataset? 
 
->
+>Contains transcribed information from Bob Damron's Address Books from 1965-1985
 
 To use a dataset included in this package we first need to load it. We can do so like this:
 
@@ -379,17 +379,17 @@ That gives us the first 6 rows of data. Its really useful if you just want to pe
 
 (@) The default is to print six rows of data. Can you modify the above code to print out the first 10 rows? 
 ```{r}
-
+head(gayguides, 10)
 ```
 
 (@) Can you find the last 6 rows of data? 
 ```{r}
-
+tail (gayguides)
 ```
 
 (@) Reflect on the previous two prompts. How did you figure these out? 
 
->
+>I googled 'how list the first 10 rows in rstudio' which gave me the answer for how to modify the number of rows displayed. Tail is the same as head and I didn't need a modifier because the default is 6 rows.
 
 The `str()` function is another very useful function for understanding a dataset. It compactly displays the internal structure of an R object. 
 ```{r}
@@ -408,28 +408,51 @@ gayguides$title[500]
 
 (@) Break this down. Whats going on here? What do each of the elements of this code mean? (gayguides, $, title, and [500]) 
 
->
+>'gayguides' is the dataset, '$' extracts a specific subset of the dataset, 'title' is the specific subset we're wanting to see, '[500]' is the location of the subset. In other words, this is a search function that is returning the contents of the cell in the title column of the 500th row.
 
 (@) The Year variable contains the year (numeric) of each entry. Can you find the earliest year in this dataset? (Using code, don't cheat and use the documentation!)
 ```{r}
-
+min(gayguides$Year)
 ```
 
 
 (@) How about the latest year? 
 ```{r}
-
+max(gayguides$Year)
 ```
 
 
 (@) Add another dataset from `DigitalMethodsData`. How many observations are included in this dataset? Run through some of the examples from above to learn about the dataset.
 ```{r}
-
+data("statepopulations")
 ```
+
+>84 observations
+
+```{r}
+str(statepopulations)
+```
+
+```{r}
+statepopulations$X1790
+```
+
+```{r}
+statepopulations$STATE
+```
+
+```{r}
+head(statepopulations)
+```
+
+```{r}
+tail(statepopulations)
+```
+
 
 (@) What did you learn about the dataset? What can you tell me about it? 
 
->
+>This is a dataset listing the U.S. census data by state or territory from 1790 thru 2020 (although the title only includes thru 2010). States without census data for a given year returns NA. The observations (Persons in the Military and some of the territories) that do not hold any numeric data also return NA in the STATEFP column - does this prevent results from being skewed?
 
 
 
