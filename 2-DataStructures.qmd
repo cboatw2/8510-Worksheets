@@ -40,7 +40,8 @@ x[c(3,3)]
 ```
 (@) Create your own vector and return three values using the subsetting method above. 
 ```{r}
-
+k <- c(12, 7, 8, 9)
+k[c(2,3,4)]
 ```
 
 
@@ -51,7 +52,7 @@ x[-c(3, 1)]
 
 (@) What happened here? Describe this in your own words. 
 
->
+>Excluded the values at the 3rd (2) and 1st (15.4) position and listed the values in the origial order without the excluded values.
 
 You can use either positive or negative integers to subset a vector but you **cannot mix the two**.
 
@@ -68,7 +69,9 @@ x[x > 7]
 
 (@) What is going on in each of the lines above? Describe it in your own words. 
 
->
+>In the assigning values example each of the first 5 variables is either assigned a TRUE or FALSE logical value. If the logical value is TRUE the corresponding value will be displayed when the code is run. The last two values that were not assigned a logical value are not displayed.
+
+>In the x[x>7] each value is tested against the equation and if the answer returned is TRUE the corresponding value will be displayed.
 
 Nothing returns the original vector. This isn't that useful here but can come in handy when you have more complex structures like matrices and arrays. 
 ```{r}
