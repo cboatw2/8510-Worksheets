@@ -192,6 +192,8 @@ So for example both of these produce the same result. One is just easier to type
 #gayguides$title
 ```
 
+>Noticed when running the previous 2 commands in console for statepopulations that [""] results in a single column output where as $ is formatted more like a matrix (rows and columns but without any real correlation to the formatting of the dataset)
+
 Notice the above output is _huge_. We can combine `$` and `[` to drill down more specifically like we did earlier.
 ```{r}
 gayguides$city[100:110]
@@ -199,7 +201,7 @@ gayguides$city[100:110]
 
 (@) What does this code do? 
 
->
+>Returns the values in the city column between rows 100 and 110
 
 
 We can also use `$` to create a new column in `gayguides`. 
@@ -262,7 +264,12 @@ if (x > 90) {
 
 (@) You are teaching History 100 for Clemson. Write an `if` statement that calculates whether the enrollment cap of 30 on your class has been met. 
 ```{r}
-
+e <- 31
+if (e > 30){
+  "Full"
+} else if (e < 30){
+  "Not Full"
+}
 ```
 
 (@) Create a list of presidents and store it in a variable. Use an `if` statement to check if the number of presidents in the list is more than 5. If its not indicate that too. 
