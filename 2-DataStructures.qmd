@@ -274,17 +274,29 @@ if (e > 30){
 
 (@) Create a list of presidents and store it in a variable. Use an `if` statement to check if the number of presidents in the list is more than 5. If its not indicate that too. 
 ```{r}
+presidents <- c("Van Buren", "W. H. Harrison", "Tyler", "Polk", "Z. Taylor", "Fillmore", "Pierce", "Buchanan")
+length(presidents)
+  if(length(presidents) > 5){
+    print ("Lots of presidents")
+  }else {
+  print ("Just a few presidents")
+}
 
 ```
 
 (@) You can also use an if statement to check a variable in a dataframe. How might you use an if statement to check if the GayGuides dataset contains any year after 1990? (Hint: first try to figure out how to determine the latest year in the dataframe and then build an if statement that checks that and prints something out if its true or false. You should think about what kind of value in contained in the Year column, how to access it, and how to check for the latest value.) 
 
 ```{r}
+if (max(gayguides$Year)>1990){
+  print ("Contains years after 1990")
+} else{
+  print ("No years after 1990")
+}
 ```
 
 (@) Reflect on the question above. How did you figure this out? What was the process you went through to build this chunk of code?
 
-> 
+> I googled how to return the largest number in list and used the max() function on the subset of Year in the gayguides dataset. I tested that and it returned the value 1985. I then built my if else statement to return the text when run.
 
 #### Loops
 
@@ -304,7 +316,7 @@ for (i in 1:3) {
 }
 ```
 
-What does this loop do? `1:3` is shorthand for 1, 2, 3. Run it in your terminal to see its output. This code says, for every number in the range 1:3, print the number.
+What does this loop do? `1:3` is shorthand for 1, 2, 3. Run it in your terminal *console* to see its output. This code says, for every number in the range 1:3, print the number.
 
 We could do this with character vectors too. 
 ```{r}
@@ -316,12 +328,14 @@ for (p in 1:length(presidents)) {
 
 (@) Why does this work? What does `length()` do and why do we use it on `presidents`?
 
-> 
+> length() counts the number of items in a list or vector. It converts character strings into a variable count (in other words, it allows the character strings to be read as a number in a list). So the code says to take every item (p) in the list president and to print the corresponding text in each item's corresponding spot in the list.
 
 Create a character vector that contains the title of each of your classes this semester. Can you write a `for` loop that prints out "I am enrolled in" and the name of each of your classes? ("I am enrolled in History 8150", "I am enrolled in History 8000".....etc). Hint: you'll need a function to combine the output and some text of your choosing inside the function. 
 
 ```{r}
-
+ClassesSpring2024 <- c("Digital Methods II", "Southern Seminar", "Thesis Hours")
+for (c in 1:length(ClassesSpring2024))
+  print (paste("I am enrolled in", ClassesSpring2024[c]))
 ```
 
 Sometimes we want our loop to terminate itself early. There are two statements that help us do that: 
