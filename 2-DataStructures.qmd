@@ -372,19 +372,47 @@ for (i in 1:10) {
 (@) In the state population data, can you write a loop that pulls only states with populations between 200,000 and 250,000 in 1800? You could accomplish this a few different ways. Try to use next and break statements. 
 ```{r}
 for (i in 1:length(statepopulations$X1800)){
-  
-  is.na(statepopulations$X1800)
-  next
-  
-  if (statepopulations$X1800[i] < 200000)
+
+  if (i == "NA"){
     next
+  }
+  else if (i < 200000){
+    next
+  } 
+    else if (i > 250000){
+      next
+    }
   
-  if (statepopulations$X1800[i] > 250000)
-    break
   
-  print (i)
+  print(statepopulations$STATE[i])
 }
 ```
+
+```{r}
+data("statepopulations")
+
+for (i in 1:length(statepopulations$X1800)) {
+ 
+  if (i == "NA"){
+    next
+  }
+  
+  else if (i > 200000){
+    print (statepopulations$STATE(i))
+  }
+    else if (i < 250000){
+      print (statepopulations$STATE(i))
+    }
+      }
+    
+```
+```{r}
+data("statepopulations")
+
+statesWithPopBetween200000And250000In1800 <- subset(statepopulations, X1800 > 200000 & X1800 < 250000, select = c(STATE, X1800), drop = FALSE)
+
+```
+
 
 (@) What if we wanted to loop through the gay guides data? Can you write a loop that iterates through the cities in the Gay Guides data and returns the title of any location in Greenville? 
 ```{r}
@@ -511,13 +539,32 @@ gg.locations("Greenville", 1980)
 ```
 
 (@) Write a function that uses the things you've learned in this worksheet. The function should accept two arguments, city and year. It should pull all the locations in that city and year and return a statement that says "Found a location called xxx". (Where x is the title of a location in that year and city.) 
-```{r}
 
+```{r}
+populationIn1800 <- function (state) {
+  data ("statepopulations")
+
+for (i in 1:length(statepopulations$STATE)) {
+     if (statepopulations$STATE[i] == state) {
+       print (paste ("The population in", state, "in 1800 was", statepopulations$X1800))
+     } else {
+       next
+     }
+}
+}
+
+populationIn1800("New Hampshire")
 ```
 
-(@) Use the Boston Women Voter dataset. Write a function that accepts the name of an occupation. Your function should return new dataframe that includes the records for every voter listed with that occupation.  
-```{r}
-data(almshouse_admissions)
+(@) Use the Boston Women Voter dataset. Write a function that accepts the name of an occupation. Your function should return new dataframe that includes the records for every voter listed with that occupation. 
 
+```{r}
+BWVOccupation <- function (occupation) {
+  data(BostonWomenVoters)
+
+subset (BostonWomenVoters, Occupation == occupation)
+}
+
+BWVOccupation("Student")
 ```
 
