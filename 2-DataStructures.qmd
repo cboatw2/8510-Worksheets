@@ -367,15 +367,32 @@ for (i in 1:10) {
 
 (@) What happened here? Why did the loop only print 3 and 4? 
 
+>For a list of numbers 1 thru 10 if any item is less than 3 next causes it to skip those items and if any item is equal to or greater than 5 it causes a break and stops the loop. Therefore, the items (numbers) stored and printed as i becomes 3 and 4.
 
 (@) In the state population data, can you write a loop that pulls only states with populations between 200,000 and 250,000 in 1800? You could accomplish this a few different ways. Try to use next and break statements. 
 ```{r}
-
+for (i in 1:length(statepopulations$X1800)){
+  
+  is.na(statepopulations$X1800)
+  next
+  
+  if (statepopulations$X1800[i] < 200000)
+    next
+  
+  if (statepopulations$X1800[i] > 250000)
+    break
+  
+  print (i)
+}
 ```
 
 (@) What if we wanted to loop through the gay guides data? Can you write a loop that iterates through the cities in the Gay Guides data and returns the title of any location in Greenville? 
 ```{r}
-
+for (i in 1:length(gayguides$city)){
+  
+  if(gayguides$city[i] == "Greenville")
+    print (gayguides$title[i])
+}
 ```
 
 `while` is another useful tool for writing loops. While will run a loop _while_ a condition is true. Once that condition is not true, it exits. For example: 
@@ -415,13 +432,13 @@ You'll notice that the variable we created inside the function, `myvalue`, doesn
 Here's another example: 
 ```{r}
 historyStudents <- function(studentname, class) {
-  statement <- paste("Hello ", studentname, ". Welcome to ", class, "!", sept="")
+  statement <- paste("Hello", studentname, ". Welcome to ", class, "!", sept="")
   statement
 }
 ```
 (@) Can you run this function? 
 ```{r}
-
+historyStudents("Hilda Rae", "US History 101")
 ```
 
 
@@ -434,14 +451,19 @@ There are several components to a function.
 
 (@) Write a function that takes a string of text and counts the number of characters. The function should return "There are xx characters in that string." 
 ```{r}
+countTheLetters <- function(w){
+  result <- paste ("There are", nchar(w), "characters in that string.")
+  result
+}
 
+countTheLetters("Savannah")
 ```
 
 (@) Reflect on the process of building the above function. How did you go about figuring this out? 
 
->
+>I used a combination of the previous 2 examples to create the function. I googled how to count the number of characters in a string and discovered R has a built in function (nchar) which would return the character count which I could then nest into the required statement.
 
-The body of a functions can use any of the techniques we've learned in this worksheet like loops and if statements. For example: 
+The body of a function can use any of the techniques we've learned in this worksheet like loops and if statements. For example: 
 ```{r}
 grade <- function(x) {
   if (x > 90) {
@@ -467,7 +489,7 @@ grade(75)
 GeorgeWashington <- grade(60)
 ```
 
->
+>Because you've attempted to assign a function to a variable. Only strings, integers, or logical values can be assigned to variables. I think you would have to use getFunction (somehow?) to incorporate a function into a variable.
 
 
 Here's a more complex example: 
@@ -483,6 +505,9 @@ gg.locations <- function (city, year) {
     } 
   }
 }
+
+gg.locations("Greenville", 1980)
+
 ```
 
 (@) Write a function that uses the things you've learned in this worksheet. The function should accept two arguments, city and year. It should pull all the locations in that city and year and return a statement that says "Found a location called xxx". (Where x is the title of a location in that year and city.) 
@@ -492,7 +517,7 @@ gg.locations <- function (city, year) {
 
 (@) Use the Boston Women Voter dataset. Write a function that accepts the name of an occupation. Your function should return new dataframe that includes the records for every voter listed with that occupation.  
 ```{r}
-
+data(almshouse_admissions)
 
 ```
 
