@@ -388,24 +388,7 @@ for (i in 1:length(statepopulations$X1800)){
 }
 ```
 
-```{r}
-data("statepopulations")
 
-for (i in 1:length(statepopulations$X1800)) {
- 
-  if (i == "NA"){
-    next
-  }
-  
-  else if (i > 200000){
-    print (statepopulations$STATE(i))
-  }
-    else if (i < 250000){
-      print (statepopulations$STATE(i))
-    }
-      }
-    
-```
 ```{r}
 data("statepopulations")
 
