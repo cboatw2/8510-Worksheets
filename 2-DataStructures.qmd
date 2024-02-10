@@ -373,27 +373,19 @@ for (i in 1:10) {
 ```{r}
 for (i in 1:length(statepopulations$X1800)){
 
-  if (i == "NA"){
+  if (is.na(statepopulations$X1800[i])){
     next
   }
-  else if (i < 200000){
+  else if (statepopulations$X1800[i] < 200000){
     next
   } 
-    else if (i > 250000){
+    else if (statepopulations$X1800[i] > 250000){
       next
     }
   
   
   print(statepopulations$STATE[i])
 }
-```
-
-
-```{r}
-data("statepopulations")
-
-statesWithPopBetween200000And250000In1800 <- subset(statepopulations, X1800 > 200000 & X1800 < 250000, select = c(STATE, X1800), drop = FALSE)
-
 ```
 
 
