@@ -1,7 +1,7 @@
 ---
 title: 'Worksheet 3: Data Manipulation'
-author: "your name here"
-date: "2023-02-14"
+author: "Candy Boatwright"
+date: "2023-02-21"
 ---
 _Before you begin this worksheet this week, please reinstall `DigitalMethodsData` from GitHub by running: `devtools::install_github("regan008/DigitalMethodsData")` in your console. Also be sure that you have installed the Tidyverse library._
 
@@ -38,16 +38,17 @@ Notice that this subsetted the data and returned only the title and year. Howeve
 
 (@) Use `select()` to take the city and state from gayguides and add them to a dataframe called "locations". 
 ```{r}
-
+locations <- gayguides %>% select(city, Year)
+locations
 ```
 
 (@) What did you do to save the data to a new data frame? Why? 
 
->
+> I assigned the selected columns to a new dataset. I believe this works because of the pipe function (%>%) in the tidyverse - in other words, rather than creating a function to run through the entire dataset and subset into a new dataset like we did last week, the %>% works as a short hand function in tidyverse.
 
 (@) Can you use `select()` to grab all the columns of `gayguides` EXCEPT for the city and state? Hint: You might want to read the documentation for this function. 
 ```{r}
-
+gayguides %>% select(!(city:state))
 ```
 
 ### Filter
