@@ -90,17 +90,20 @@ gayguides %>% filter(Year >= 1975 & Year <= 1980)
 (@) Every entry in Greenville, SC between 1975 and 1980? 
 
 ```{r}
-
+gayguides %>% filter (city == "Greenville" & state == "SC" & Year %in% c(1975:1980))
 ```
 
 (@) Can you find all locations in 1975 except for New York and San Francisco? 
 ```{r}
-
+gayguides %>% filter (Year == 1975 & (city != "New York" | city != "San Francisco"))
 ```
 
 (@) The amenity features column in gay guides contains a comma separated list of categorizations. (G), for example, stands for girls. However, this language changed over time and women's locations eventually are described as (L). What if we want to filter by any entry that has (G) OR (L) in the amenity feature column?  This is a bit more complicated because the entries are a comma separated list and (G) or (L) is often paired with other categorizations. How might you _search the dataframe for entries that match_ (G) or (L)?
 ```{r}
-
+gayguides %>% 
+  separate_rows(amenityfeatures) %>%
+  distinct(amenityfeatures) %>%
+  arrange(amenityfeatures) 
 ```
 
 ### Mutate
@@ -114,13 +117,15 @@ statepopulations %>% mutate(difference = X1900 - X1800)
 
 (@) In the Boston Women Voters dataset, every voter is given an age. Can you use their age to calculate each person's birth year? (Assume all this data was collected in 1920.)
 ```{r}
-
+data("BostonWomenVoters")
+BostonWomenVoters %>% mutate(Year.of.Birth = 1920 - Age)
 ```
 
 (@) Can you create a new column that combines the city and state columns in `gayguides` into a new column called location? It should list the city, state. (i.e. San Diego, CA)
 
 ```{r}
-
+data("gayguides")
+gayguides %>% mutate(Location = paste0(city, ", ", state))
 ```
 
 ### Arrange
@@ -139,7 +144,10 @@ gayguides %>%
 
 (@) Using the `statepopulation` data, which state has the largest population in 1850? Write code that pulls only the relevant columns (state and 1850) and sorts it accordingly. 
 ```{r}
-
+data("statepopulations")
+statepopulations %>%
+  select (X1850, STATE) %>%
+  arrange (desc(X1850), .by_group = TRUE)
 ```
 
 ### Group_by() and Summarize()
@@ -162,7 +170,10 @@ What happened here? In this example, we asked group_by to create groups based on
 
 (@) You try, use group_by and summarize to find the total number of locations in each state, each year.
 ```{r}
-
+gayguides %>% 
+    select(state, title, Year) %>%
+    group_by(Year) %>%
+    summarize(count = n())
 ```
 
 (@) Summarize can do more than just count rows. Can you use `summarize()` to find the average age for each occupation in the Boston Women Voters data?
