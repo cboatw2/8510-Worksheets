@@ -172,26 +172,38 @@ What happened here? In this example, we asked group_by to create groups based on
 ```{r}
 gayguides %>% 
     select(state, title, Year) %>%
-    group_by(Year) %>%
-    summarize(count = n())
+    group_by(state, Year) %>%
+    summarize(numberOfLocations = n())
 ```
 
 (@) Summarize can do more than just count rows. Can you use `summarize()` to find the average age for each occupation in the Boston Women Voters data?
 ```{r}
-
+BostonWomenVoters %>%
+  select (Occupation, Age) %>%
+  group_by(Occupation) %>%
+  summarize(Avg_Age = round(mean(Age,0)))
 ```
 
 (@) In the `gayguides` data, on average how many locations did each city in South Carolina have between 1970 and 1975?
 ```{r}
-
+gayguides %>%
+  select (title, city, state, Year) %>%
+  group_by(Year, city) %>%
+  filter (Year >= 1970 & Year <= 1975 & state == "SC") %>%
+  summarize (averageNumberOfLocations = mean(n(title)))
 ```
 
 (@) Filter the dataset for only the values in the southernstates list (created in the block below). Then tell me, how many locations were in all the southern states in 1975?
 ```{r}
 southernstates <- c("AL", "AR", "FL", "GA", "KY", "LA", "MD", "MS", "NC", "SC", "TN", "TX", "VI", "WV")
 
+gayguides %>%
+  select (state, title, Year) %>%
+  filter (state == southernstates & Year == 1975) %>%
+  group_by(state) %>%
+  summarize (numberOfLocations = n())
 ```
-
+ 
 ## Re-Shaping Data: Joins and Pivots
 
 ### Joins()
@@ -218,11 +230,21 @@ head(almshouse_admissions)
 regions <- read.csv("https://raw.githubusercontent.com/regan008/DigitalMethodsData/main/raw/censusregions.csv")
 ```
 
+```{r}
+gayguides <- left_join(gayguides, regions, by=c("state"="State.Code"))
+
+head (gayguides)
+```
+
 (@) Explain what you did above. What variable did you join by and why? What results?
+>Joined the new dataset, regions, with the gayguides dataset. I joined the state column of gayguides with State.Code of regions. Both datasets appear and regions appears 3 times as x, y and normally because it is attempting to match all variables of the dataset.
 
 (@)How much did LGTBQ life grow between 1970 and 1980? Can you create a data frame that computes the growth in the number of locations between 1970 and 1980 for every state? For every region? 
 ```{r}
-
+gayguides %>%
+  select (Year, state, title) %>%
+  group_by (state, filter (Year = 1970:1980)) %>%
+  summarize (count(n))
 ```
 
 
@@ -241,11 +263,14 @@ sc.parks <- sc.parks %>%
 ```
 
 (@) What did this code do? 
->
+>It transformed the sc.parks dataset by keeping the city through the type_of_worker columns, but creating a new year column and sending what were column title names into the cells of that column and then creating a new count column and sending the values of the old year columns to that.
 
 (@) Here's another wide data frame. Can you turn this from a wide to a narrow data frame? 
 ```{r}
 rec.spaces <- read.csv("https://raw.githubusercontent.com/regan008/DigitalMethodsData/main/raw/PlayAreabyType.csv")
+
+rec.spaces <- rec.spaces %>%
+  pivot_longer(!type, names_to = "year", values_to = "count")
 ```
 
 The opposite of `pivot_longer()` is `pivot_wider()`. It "widens" data by increasing the number of columns and decreasing the number of rows. We can revert `sc.parks` back to a wide dataset using this function.
@@ -256,12 +281,14 @@ sc.parks %>%
 
 (@) Widen the `sc.parks` dataset so that the column names are drawn from the type of recreation worker.
 ```{r}
-
+sc.parks %>%
+  pivot_wider(names_from = type_of_worker, values_from = count)
 ```
 
 (@) Turn `rec.spaces` into a wide dataframe. 
 ```{r}
-
+rec.spaces %>%
+  pivot_wider(names_from = year, values_from = count)
 ```
 
 
@@ -277,26 +304,38 @@ The implicit question was, "How many locations appear in each year?". The `judge
 
 (@) First, tell me, what is the question you are asking? 
 ```{r}
-
+#What is the average lifespan of a judge by gender?
 ```
 
 (@) Now write some code to address that question. Comment the code with notes that explain your thinking as you go. Use functions like select(), filter(), etc to pair down your dataset and reshape it to address your question. 
 ```{r}
-
+judges %>%
+  select (Birth.Year, Death.Year, Gender) %>% #grabs the columns needed
+  group_by (Gender) %>% #sets up output by Gender
+  mutate (Age = Death.Year - Birth.Year) #attempting to create a new Age column through subtracting Birth.Year from Death.Year
 ```
 
 (@) Now ask a question of the `gayguides` data (or another dataset of your choice). What is the question you are asking? 
 ```{r}
-
+#In the datast rec.spaces, what year had the highest number of occurrences for each type of equipment?
 ```
 
 (@) Now write some code to address that question. Comment the code with notes that explain your thinking as you go. Use functions like select(), filter(), etc to pair down your dataset and reshape it to address your question. 
 ```{r}
+rec.spaces %>%
+  select (type, year, count) %>%
+  group_by (type) %>%
+  mutate(group_max = max(count))
 
 ```
 
 (@) Write a function that filters the gay guides dataset. It should accept 2 arguments: year and state. When passed to the function the function should return only the title, type, state and year for each entry. 
 ```{r}
-
+gayguides %>%
+  #locations <- gayguides %>% select(city, Year)
+  
+gayguides_lookup <- function (state, year) {
+  
+}
 ```
 
