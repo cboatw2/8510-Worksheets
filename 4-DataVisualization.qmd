@@ -1,7 +1,7 @@
 ---
 title: 'Worksheet 4: Data Visualization'
-author: ''
-date: ''
+author: 'Candy Boatwright'
+date: 'February 28, 2024'
 ---
 
 _This is the fourth in a series of worksheets for History 8510 at Clemson University. The goal of these worksheets is simple: practice, practice, practice. The worksheet introduces concepts and techniques and includes prompts for you to practice in this interactive document. When you are finished, you should change the author name (above), knit your document, and upload it to canvas. Don't forget to commit your changes as you go and push to github when you finish the worksheet._
@@ -36,7 +36,8 @@ data(gapminder)
 
 (@) Take a look at the data. What can you say about it? 
 
-> 
+> It's a dataset arranged in long form. Contains the average life expentancy, the population, and the GDP per capita for a sampling of countries across different countries from 1952-2007 in 5 year increments. The data does not seem to be complete, however, because not every country has data for every 5 years, although so do.
+
 
 This data includes variables for life exptenency and per capita GDP. Lets say we want to plot these two variables against each other for all country-years within the dataset. First we have to tell `ggplot()` what our data is. 
 ```{r}
