@@ -65,7 +65,8 @@ To summarize what we did above, there were 3 steps we went through. First, tell 
 
 (@) Modify the above plot so that the variables it draws on are life expectancy and population. Then, use a comment to annotate the code and mark each of the 3 parts described above.
 ```{r}
-
+p2 <- ggplot(data = gapminder, mapping = aes(x = pop, y=lifeExp)) #Part 1: fetches gapminder as data for ggplot; Part 2: adds pop and lifeExp as variable to the plot
+p + geom_point() #Part 3: adds geom_point as geom in order to create point graph
 ```
 
 We can make this plot even more complex. Adding another value, color, to `aes()` we can change the color of each dot to correspond to a year. We also might want to rename the x and y-axis so that the labels have a more useful description of the variable. We can do so using the labs function. 
@@ -76,13 +77,15 @@ ggplot(data = gapminder, mapping = aes(x = gdpPercap, y=lifeExp, color=year)) + 
 
 (@) Using the same plot above, can you edit the code to add a trend line? (Hint: You'll need to add another geom)
 ```{r}
-
+ggplot(data = gapminder, mapping = aes(x = gdpPercap, y=lifeExp, color=year)) + geom_point() + labs(x="GDP Per Capita", y="Life Expectency in Years", title="Life Expectency and Per Capita GDP by Year") + geom_smooth()
 ```
 
 
 (@) The file below contains data about the population of cities in 1930 and their recreation expenditures. Can you create a scatter plot from this data? 
 ```{r}
 rec <- read.csv(file = "https://raw.githubusercontent.com/regan008/DigitalMethodsData/main/raw/Recreation-Expenditures.csv")
+
+rec.plot <- ggplot(data = rec, mapping = aes(x = population, y = total_expenditures)) + geom_point() + labs(x="Population", y="Total Expenditures", title="Total Recreation Expenditures and Population of American Cities in 1930")
 ```
 
 The `geom_point()` function allows us to create scatterplots but its not the only geom within `ggplot2()`.
