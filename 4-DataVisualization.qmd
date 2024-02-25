@@ -85,7 +85,7 @@ ggplot(data = gapminder, mapping = aes(x = gdpPercap, y=lifeExp, color=year)) + 
 ```{r}
 rec <- read.csv(file = "https://raw.githubusercontent.com/regan008/DigitalMethodsData/main/raw/Recreation-Expenditures.csv")
 
-rec.plot <- ggplot(data = rec, mapping = aes(x = population, y = total_expenditures)) + geom_point() + labs(x="Population", y="Total Expenditures", title="Total Recreation Expenditures and Population of American Cities in 1930")
+ggplot(rec, mapping = aes(x = population, y = total_expenditures, color = population)) + geom_point() + labs(x="Population", y="Total Expenditures", title="Recreation Expenditures and Population of American Cities in 1930") +  theme(  axis.text.x = element_blank(),  axis.text.y = element_blank()) + geom_smooth()
 ```
 
 The `geom_point()` function allows us to create scatterplots but its not the only geom within `ggplot2()`.
@@ -103,17 +103,27 @@ ggplot(recreational.data, aes(x = population)) +
 
 (@) Use the Boston Women's voters dataset to create a histogram of the age of voters. 
 ```{r}
+data("BostonWomenVoters")
 
+ggplot(BostonWomenVoters, aes(x = Age)) + geom_histogram()
 ```
 
 (@) By default, `geom_histogram()` is choosing the number of bins. Can you change the number of bins or the bin width? (Hint: How might you look up the options for this function?)
 ```{r}
+data("BostonWomenVoters")
 
+ggplot(BostonWomenVoters, aes(x = Age)) + geom_histogram( ,binwidth = .7)
+```
+
+```{r}
+data("BostonWomenVoters")
+
+ggplot(BostonWomenVoters, aes(x = Age)) + geom_histogram( ,bins = 8)
 ```
 
 (@) Explain, what does changing the number of bins do? 
 
-> 
+> The default is set at 30 bins so decreasing the number of bins for this graph will create a simplified graphic - it will appear as if each age group has one count.
 
 ### Barplots 
 
@@ -127,11 +137,20 @@ ggplot(sc.rec, aes(x = state, y = state.expenditures )) +
 
 (@) Using the `gayguides` data, create a bar chart that shows the number of locations in 1980 in South Carolina, Georgia, and North Carolina. 
 ```{r}
+data ("gayguides")
 
+state.select <- function ()
+
+gayguides %>% filter(gayguides, state == "SC", "GA", "NC") %>%
+
+ggplot(gayguides, aes(x = state, y = count)) + geom_col()
 ```
 
 (@) Using the `gayguides` data, plot the number of religious institutions in each state.
 ```{r}
+gayguides %>%
+  group_by(state) %>%
+  filter (gayguides, type == "religious")
 
 ```
 
