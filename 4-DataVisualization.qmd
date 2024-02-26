@@ -139,28 +139,32 @@ ggplot(sc.rec, aes(x = state, y = state.expenditures )) +
 ```{r}
 data ("gayguides")
 
-state.select <- function ()
+south80 <- gayguides %>% group_by(state) %>% filter(Year == 1980) %>% filter(state %in% c("SC", "GA", "NC")) %>% summarize(count = n()) 
 
-gayguides %>% filter(gayguides, state == "SC", "GA", "NC") %>%
-
-ggplot(gayguides, aes(x = state, y = count)) + geom_col()
+ggplot(south80, aes(x = state, y = count)) + geom_col()
 ```
 
 (@) Using the `gayguides` data, plot the number of religious institutions in each state.
 ```{r}
-gayguides %>%
-  group_by(state) %>%
-  filter (gayguides, type == "religious")
+data ("gayguides")
+
+rel.inst <- gayguides %>% group_by(state) %>% filter(type == "Religious Institution") %>% summarize(count = n()) 
+
+ggplot(rel.inst, aes(x = state, y = count)) + geom_point() + geom_segment(aes(x=state, xend=state, y=0, yend=count))
 
 ```
 
 (@) Formulate a question based on a dataset of your choice. That question should be something that would be appropriately answered by a bar chart. What is the question you want to explore?
 
-<
+>What is the number of Boston women votes by the state of their birth state?
 
 (@) Now write the code to answer that question and use comments (`#`) to explain your thinking as you go.
 ```{r}
+data("BostonWomenVoters")
 
+birth.state <- BostonWomenVoters %>% select(State.or.Province.of.Birth) %>% summarise(count(n))
+
+ggplot(birth.state, aes(x = State.or.Province.of.Birth, y = count)) + geom_col()
 ```
 
 ### Line Charts
