@@ -191,7 +191,7 @@ ggplot(rel.inst.by.year, aes(x = Year, y = count)) + geom_line()
 ```{r}
 data ("gayguides")
 
-southern.risk <- gayguides %>% select (Year, description, state) %>% group_by(Year) %>% filter(state %in% c("SC", "GA", "NC")) %>% filter(description == "Religious Institution") %>% summarize(count = n()) %>% print
+southern.risk <- gayguides %>% group_by(Year) %>% filter(state == "SC" | state == "NC" | state == "GA") %>% filter(str_detect(gayguides, "AYOR")) %>% summarize(count = n()) %>% print
 
 ggplot(southern.risk, aes(x = Year, y = count)) + geom_line()
 ```
@@ -214,7 +214,10 @@ ggplot(gg.byyear, aes(x = Year, y = count)) +
 
 (@) Using the gayguides data can you select 5 types of locations and chart the number of each type between 1965 and 1980? 
 ```{r}
+gg.by.type <- gayguides %>% filter(type == "Restaurant" | type == "Bars/Clubs" | type == "Cruising Areas" | type == "Religious Institutions" | type == "Bats") %>% filter(Year >= 1965 & Year <= 1980) %>% group_by(type, Year) %>% summarize(count = n())
 
+ggplot(gg.by.type, aes(x = Year, y = count)) +
+  geom_line() + facet_wrap(~type)
 ```
 
 (@) Using this recreation dataset from last week, can you find the average number of volunteer and paid workers over time? 
@@ -229,11 +232,21 @@ In the slots below use the datasets for class (or a dataset of your choice) to c
 
 (@) Plot 1
 ```{r}
+data("BostonWomenVoters")
+
+StudentByState <- BostonWomenVoters %>% filter(Country.of.Birth == "United States") %>% filter(Occupation == "Student") %>% group_by(State.or.Province.of.Birth)
+
+ggplot(StudentByState, aes(y = count())) +
+  geom_histogram()
+```
+
+```{r}
+ %>% summarize(count(n = State.or.Province.of.Birth))
 
 ```
 
 (@) Plot 1 explanation: 
->
+>Histogram indicating number of women students in each state in the United States.
 
 (@) Plot 2
 ```{r}
