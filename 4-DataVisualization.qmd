@@ -150,21 +150,25 @@ data ("gayguides")
 
 rel.inst <- gayguides %>% group_by(state) %>% filter(type == "Religious Institution") %>% summarize(count = n()) 
 
-ggplot(rel.inst, aes(x = state, y = count)) + geom_point() + geom_segment(aes(x=state, xend=state, y=0, yend=count))
+ggplot(rel.inst, aes(x = state, y = count)) + theme(axis.text.x=element_text(angle=90,hjust=1)) + geom_point() + geom_segment(aes(x=state, xend=state, y=0, yend=count))
 
 ```
 
 (@) Formulate a question based on a dataset of your choice. That question should be something that would be appropriately answered by a bar chart. What is the question you want to explore?
 
->What is the number of Boston women voters by their birth state?
+>What is the number of Boston women voters whose occupation is listed as a housewife by their birth country?
 
 (@) Now write the code to answer that question and use comments (`#`) to explain your thinking as you go.
 ```{r}
 data("BostonWomenVoters") #calls BostonWomenVoters dataset
 
-birth.state <- BostonWomenVoters %>% group_by(State.or.Province.of.Birth) %>% count () %>% filter(n > 0) %>% print #creates a function to group the dataset by the voters' state/province of birth and then to count each state/province
+housewife.by.country <- BostonWomenVoters %>%  #begins function housewife.by.country
+  filter(Occupation == "Housewife") %>% #filters by occupation to show only housewives
+  group_by(Country.of.Birth) %>% #groups by country of birth
+  summarize(count = n()) %>% #counts the number of housewives by country
+  print #prints the subset
 
-ggplot(birth.state, aes(x = State.or.Province.of.Birth, y = count(n))) + geom_col()
+ggplot(housewife.by.country, aes(x = Country.of.Birth, y = count)) + theme(axis.text.x=element_text(angle=90)) + geom_col()
 ```
 
 ### Line Charts
@@ -191,7 +195,7 @@ ggplot(rel.inst.by.year, aes(x = Year, y = count)) + geom_line()
 ```{r}
 data ("gayguides")
 
-southern.risk <- gayguides %>% group_by(Year) %>% filter(state == "SC" | state == "NC" | state == "GA") %>% filter(str_detect(gayguides, "AYOR")) %>% summarize(count = n()) %>% print
+southern.risk <- gayguides %>% group_by(Year) %>% filter(state == "SC" | state == "NC" | state == "GA") %>% filter(description %in% c("AYOR", "HOT", "Fuzz")) %>% summarize(count = n()) %>% print
 
 ggplot(southern.risk, aes(x = Year, y = count)) + geom_line()
 ```
@@ -209,7 +213,12 @@ ggplot(gg.byyear, aes(x = Year, y = count)) +
 
 (@) Using the state recreation data, can you create a chart that outlines the total expenditures in South Carolina by city?
 ```{r}
+data(rec)
 
+SC.City.Exp <- rec %>% filter(state == "SC") %>% group_by(population, total_expenditures, city) %>% summarize(count = n())
+
+ggplot(SC.City.Exp, aes(x = population, y = total_expenditures)) +
+  geom_line() + facet_wrap(~city)
 ```
 
 (@) Using the gayguides data can you select 5 types of locations and chart the number of each type between 1965 and 1980? 
@@ -224,7 +233,12 @@ ggplot(gg.by.type, aes(x = Year, y = count)) +
 ```{r}
 rec.workers <- read.csv("https://raw.githubusercontent.com/regan008/DigitalMethodsData/main/raw/RecreationData-Wide.csv")
 
+data (rec.workers)
 
+Vol.and.Pd <- rec.workers %>% group_by(type_of_worker) %>% summarise(count = n())
+
+#ggplot(Vol.and.Pd, aes(x = X1930, y = count)) +
+  #geom_line() + facet_wrap(~type_of_worker)
 ```
 
 ### Practice
@@ -234,33 +248,55 @@ In the slots below use the datasets for class (or a dataset of your choice) to c
 ```{r}
 data("BostonWomenVoters")
 
-StudentByState <- BostonWomenVoters %>% filter(Country.of.Birth == "United States") %>% filter(Occupation == "Student") %>% group_by(State.or.Province.of.Birth)
+BWV.Students.By.State <- BostonWomenVoters %>% filter(Occupation == "Student") %>% filter(Country.of.Birth == "United States")  %>% group_by(State.or.Province.of.Birth) %>% summarize(count = (State.or.Province.of.Birth)) %>% print()
 
-ggplot(StudentByState, aes(y = count())) +
-  geom_histogram()
-```
-
-```{r}
- %>% summarize(count(n = State.or.Province.of.Birth))
-
+ggplot(BWV.Students.By.State, aes(x = State.or.Province.of.Birth)) + theme(axis.text.x=element_text(angle=90)) + geom_bar()
+  
 ```
 
 (@) Plot 1 explanation: 
->Histogram indicating number of women students in each state in the United States.
+>I want to know the dispersion of home states of the women who were registered to vote in Boston in 1920 whose occupation was listed as a student. I need to filter by occupation, then by birth county to see only American-born voters. Then I need to group by state of birth. The plot demostrates the scarcity of women students in Boston in 1920 and that the vast majority of students are born in Boston.
 
 (@) Plot 2
 ```{r}
+data("gapminder")
 
+gm.Americas <- gapminder %>% filter(continent == "Americas")
+  
+ggplot(gm.Americas, mapping = aes(x = gdpPercap, y=lifeExp, color=country)) + geom_point() + labs(x="GDP Per Capita", y="Life Expectency in Years", title="Life Expectency and Per Capita GDP by Year") + geom_smooth()
 ```
 
 (@) Plot 2 explanation: 
->
+>I want to plot the life expectency and GDP by year of the countries in the Americas in the gapminder dataset. I filtered the dataset by continent and then plotted the GDP(x) and the life expectency(y). By changing the color to country it somewhat shows the individual countries growth over time, although it's probably too cluttered to be very useful.
 
 (@) Plot 3. For this one, try a different kind of plot. [Check out a useful gallery here.](https://github.com/regan008/DigitalMethodsData/blob/main/raw/RecreationData-Wide.csv)
 (For this week, avoid choosing a map. We'll talk more about maps and geographic data over the next two weeks.)
-```{r}
 
+
+```{r}
+data("gapminder")
+
+gm.Americas <- gapminder %>% filter(continent == "Americas") %>% filter(year == "1952" | year == "1972" | year == "1992" | year == "2002")
+  
+ggplot(gm.Americas, mapping = aes(x = gdpPercap, y=lifeExp, label = country)) + geom_label() 
 ```
 
-(@) Plot 3 explanation: 
->
+@Plot 4 explanation:
+>Plots the life expectancy and GDP of countries in the Americas for the years 1952, 1972, 1992, and 2002. Putting the names of the countries allows for a more striking visualization of the correlation between the two variables.
+
+```{r}
+Union.Incidents <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSRFwjcJ0Xnnic2NrdWXC5ld2LkDwJAfRCU7lq0ohhYIaPjhd-s-MfAdBM0sgarXzH-qoCCkwr4yRns/pub?output=csv")
+
+data (Union.Incidents)
+
+Union.Words <- Union.Incidents %>% select (ArticleTitle, DiscriptionOfOccurence, ConsequenceOfOccurence) 
+
+#ggwordcloud(Union.Incidents, aes(label = Union.Words))
+ggplot(Union.Incidents, aes(label = "ArticleTitle", "DiscriptionOfOccurence", "ConsequenceOfOccurence")) +
+  geom_text_wordcloud() +
+  #scale_size_area(max_size = 40) +
+  theme_minimal()
+```
+
+(@) Plot 4 explanation: 
+>Creates a wordcloud using the article title, description and consequence columns for the dataset I created about anti-Confederate incidents reported in the Greenville Enterprise.
