@@ -1,0 +1,148 @@
+---
+title: "March_6_Pengs_Exploratory_Data_Checklist"
+author: "Candy Boatwright"
+date: "2024-03-02"
+output: html_document
+---
+
+Peng's Checklist:
+
+Step 1: Formulate your question
+
+>CREATE A BASELINE OF DATA: Chart the population of South Carolina from 1800-1900 in order to create a baseline of population growth/decline as a result of the cotton Panic of 1819, the westward exodus of planters prior to the end of the Civil War.
+>REGIONAL COMPARISONS: Is it possible to demostrate that through state population data that South Carolina was harder pressed in the cotton panic/federal tariffs and that it caused a westward exodus? Does the west see a significant population increase during this time? Do any other southern states experience similar trends? Any experience vastly different population growth/decline during that same period? 
+>NATIONAL COMPARISON: How do southern population trends compare to the north during the same time period?
+
+
+Step 2: Read your data
+
+```{r}
+library(DigitalMethodsData)
+data("statepopulations")
+```
+
+Step 3: Check the packaging
+
+```{r}
+library(DigitalMethodsData)
+library(tidyverse)
+library(dplyr)
+data("statepopulations")
+
+nrow(statepopulations)
+
+ncol(statepopulations)
+```
+
+Step 4: Run str()
+
+```{r}
+str(statepopulations)
+
+#shows that all variables(columns) that contain NA are int
+```
+
+
+Step 5: Look at the top and bottom of your data
+
+```{r}
+head(statepopulations[, c(1:5, 28)])
+```
+
+```{r}
+tail(statepopulations[, c(1:5, 28)])
+```
+
+Step 6: Check your "n"s
+
+```{r}
+library(dplyr)
+
+#data (statepopulations) %>%  str_detect(replace_na(STATEFP, "NA"))
+
+#filter (statepopulations, STATEFP == is.na) %>%
+#    select (STATE, X1790:X2020)
+
+#statepopulations$X1790 %>% replace_na("0")
+
+statepopulations$STATEFP %>% str_detect("NA") #shows that NA is detectable as "NA"; do not understand why I can't filter by "NA" or use the is.na?
+
+```
+
+> The previous section was throwing all kinds of errors when I was attempting to knit so I used # to comment it out. The last section I was able to get to run and produce a list of logial returns based on whether it returned NA or not.
+
+Step 7: Validate at least one external data source
+
+>I created another dataset based on data in the South Carolina 1910 Census to compare to the statepopulations dataset
+
+```{r}
+library(readr)
+
+SC.1910.Census.Data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRykQyFdzO3ymKCZ4cXtXmA273iSnAEvcmjm9tdTKEdgXkpmaGSr0p6mYO9shO1GRBBDs5N6TM4LRxU/pub?gid=0&single=true&output=csv", col_types = "iiinn")
+print(SC.1910.Census.Data)
+
+#p <- problems(SC.1910.Census.Data) showed the columns with decimals were messing up reading as int, changed to n which is human readable number
+#p
+
+#Put quotes around Google sheets link, otherwise you spend an hour trying to figure out how to read_csv
+```
+
+
+Step 8: Try the easy solution first
+
+```{r}
+state.pop.longer <- statepopulations %>%
+  pivot_longer(!GISJOIN:STATENH, names_to = "year", values_to = "count")
+
+sc.state.pop.longer <- state.pop.longer %>% filter(STATE == "South Carolina") %>% filter(year == "X1790" | year == "X1800" | year == "X1810" | year == "X1820" | year == "X1830"| year == "X1840"| year == "X1850"| year == "X1860"| year == "X1870"| year == "X1880"| year == "X1890")
+print (sc.state.pop.longer)
+
+ggplot(sc.state.pop.longer, aes(x = year, y=count, group = year)) + theme(axis.text.x=element_text(angle=90,hjust=1)) + geom_point() + geom_line() + labs(x="Census Year", y="Census Population", title="South Carolina Population 1790 to 1890") +
+  scale_y_continuous(limits=c(20000, 1200000))
+```
+
+>Base line map of South Carolina's population through 1890 (end of Reconstruction). Shows stagnent/slow growth from 1820-1870. Not able to get geom_line() to work.
+
+```{r}
+state.pop.longer <- statepopulations %>%
+  pivot_longer(!GISJOIN:STATENH, names_to = "year", values_to = "count")
+
+southern.state.pop.longer <- state.pop.longer %>% group_by(STATE) %>% filter(STATE == "South Carolina" | STATE == "North Carolina"| STATE == "Georgia" | STATE == "Virginia" | STATE == "Texas" | STATE == "Arkansas" | STATE == "Louisiana" | STATE == "Tennessee" | STATE == "Mississippi" | STATE == "Alabama" | STATE == "Florida") %>% filter(year == "X1790" | year == "X1800" | year == "X1810" | year == "X1820" | year == "X1830"| year == "X1840"| year == "X1850"| year == "X1860"| year == "X1870"| year == "X1880"| year == "X1890")
+print (southern.state.pop.longer)
+
+ggplot(southern.state.pop.longer, aes(x = year, y=count, color = STATE, group = STATE)) + geom_point() + geom_line() + labs(x="Census Year", y="Census Population", title="Southern Population 1790 to 1890") +
+  scale_y_continuous(limits=c(20000, 2000000))
+```
+
+>Shows that North Carolina, South Carolina and Viriginia saw a significant growth stagnation between 1830 and 1840. All other southern states reporting between 1830 and 1840 saw a significant population growth with Alabama and Mississippi showing the largest growth. This would seem to support the idea that many South Carolinians were relocating west during this time, but that a similar situation was occuring in North Carolina and Viriginia. Neither NC or VA saw a Nullification Crisis in early the 1830s, though.
+
+```{r}
+state.pop.longer <- statepopulations %>%
+  pivot_longer(!GISJOIN:STATENH, names_to = "year", values_to = "count")
+
+northern.state.pop.longer <- state.pop.longer %>% group_by(STATE) %>% filter(STATE == "Delaware" | STATE == "Pennsylvania"| STATE == "New Jersey" | STATE == "Connecticut" | STATE == "Massachusetts" | STATE == "Maryland" | STATE == "New Hampshire" | STATE == "New York" | STATE == "Rhode Island" | STATE == "Vermont" | STATE == "Maine") %>% filter(year == "X1790" | year == "X1800" | year == "X1810" | year == "X1820" | year == "X1830"| year == "X1840"| year == "X1850"| year == "X1860"| year == "X1870"| year == "X1880"| year == "X1890")
+print (northern.state.pop.longer)
+
+ggplot(northern.state.pop.longer, aes(x = year, y=count, color = STATE, group = STATE)) + geom_point() + geom_line() + labs(x="Census Year", y="Census Population", title="Northern Population 1790 to 1890") +
+  scale_y_continuous(limits=c(20000, 2000000))
+```
+
+>This was not at all what I expected to see! The growth stagnation was much worse in the North than in the South except for Pennsylvania and New Jersey (maybe? kind of hard to tell if NJ or NY because of color similarities). How much does the 3/5th clause factor into the population numbers? Was the tariff only aimed at the south? Was there a trend westward from the north? If so, why? Land depletion like in the South or other reasons? I know there are northerners moving south, but are they staying?
+
+
+Step 9: Challenge your solution
+```{r}
+state.pop.longer <- statepopulations %>%
+  pivot_longer(!GISJOIN:STATENH, names_to = "year", values_to = "count")
+
+populations.in.1830.and.1840 <- state.pop.longer %>% filter (year == "X1830" | year == "X1840") %>% filter (count > 0)
+print (populations.in.1830.and.1840)
+
+ggplot(populations.in.1830.and.1840, aes(x = year, y = count, fill = year, group = year)) + geom_col() + facet_wrap(~STATE, strip.position = "bottom") + theme(strip.placement = "outside")
+```
+
+> Probably not the best visualization because of scale, but does show the states/territories that saw stagnation and which saw growth. Reinforces the challenge to southern thinking that all the northern economies were growing at their expense during the cotton bust/tariff era.
+
+Step 10: Follow up
+
+>What about Kentucky, Ohio, Indiana, Illinois, Missouri, Michigan, Iowa, Wisconsin, California, Minnesota, Oregon, Kansas, Nevada - all admitted before Civil War but not typically identified as Northern or Southern? Also complicated because some were admitted as slave/free state and then either Confederate/Union during Civil War.

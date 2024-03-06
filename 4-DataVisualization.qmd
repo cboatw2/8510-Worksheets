@@ -188,14 +188,21 @@ data ("gayguides")
 
 rel.inst.by.year <- gayguides %>% group_by(Year) %>% filter(type == "Religious Institution") %>% summarize(count = n()) 
 
-ggplot(rel.inst.by.year, aes(x = Year, y = count)) + geom_line()
+ggplot(rel.inst.by.year, aes(x = Year, y = count)) + geom_line() + geom_point()
 ```
 
 (@) In the gayguides data, danger or risk is indicated in several different ways. Sometimes it through the use of an amenity categorization of (HOT) or (AYOR) which meant that these locations were frequented by police and should be used at your own risk. Other times, locations were listed as "inquire locally" in either the description or address field. There are many reasons a location would have requested to have been listed this way. Many times, it was due to harassment and the location deemed it too dangerous to publicly list its location. Can you create a subset of the gay guides data about risk and then use it to create a chart about the usage of these indicators over time? 
+
+```{r}
+gayguides %>%
+
+filter(grepl("(HOT)", gayguides$amenityfeatures, ignore.case = TRUE) | grepl("(AYOR)", gayguides$amenityfeatures, ignore.case = TRUE))
+```
+
 ```{r}
 data ("gayguides")
 
-southern.risk <- gayguides %>% group_by(Year) %>% filter(state == "SC" | state == "NC" | state == "GA") %>% filter(description %in% c("AYOR", "HOT", "Fuzz")) %>% summarize(count = n()) %>% print
+southern.risk <- gayguides %>% group_by(Year) %>% filter(state == "SC" | state == "NC" | state == "GA") %>% filter(str_detect(amenityfeatures, 'AYOR|HOT')) %>% summarize(count = n()) %>% print
 
 ggplot(southern.risk, aes(x = Year, y = count)) + geom_line()
 ```
@@ -230,6 +237,8 @@ ggplot(gg.by.type, aes(x = Year, y = count)) +
 ```
 
 (@) Using this recreation dataset from last week, can you find the average number of volunteer and paid workers over time? 
+
+
 ```{r}
 rec.workers <- read.csv("https://raw.githubusercontent.com/regan008/DigitalMethodsData/main/raw/RecreationData-Wide.csv")
 
@@ -292,10 +301,10 @@ data (Union.Incidents)
 Union.Words <- Union.Incidents %>% select (ArticleTitle, DiscriptionOfOccurence, ConsequenceOfOccurence) 
 
 #ggwordcloud(Union.Incidents, aes(label = Union.Words))
-ggplot(Union.Incidents, aes(label = "ArticleTitle", "DiscriptionOfOccurence", "ConsequenceOfOccurence")) +
-  geom_text_wordcloud() +
+#ggplot(Union.Incidents, aes(label = "ArticleTitle", "DiscriptionOfOccurence", "ConsequenceOfOccurence")) +
+  #geom_text_wordcloud() +
   #scale_size_area(max_size = 40) +
-  theme_minimal()
+  #theme_minimal()
 ```
 
 (@) Plot 4 explanation: 
