@@ -1,0 +1,29 @@
+---
+title: "Untitled"
+format: html
+---
+
+```{r}
+download.file("https://raw.githubusercontent.com/regan008/8510-Worksheets/main/6-TextAnalysis.qmd", "6-TextAnalysis.qmd")
+```
+
+If you're using geocoding or other really long code that you don't want to render use #| eval:false in qmd doc to cause that block of code not to render
+
+Textual Analysis:
+Datasets look different because computer cannot interpret textual data so text must be converted to vectors of numbers
+
+Bag of Words Model (BOW) - all the text gets thrown into a bag (because order doesn't matter) and it counts the instances of each word; get rid of stop words and punctuation
+
+Lincoln Mullen's America's Public Bible project took chunks of scripture and then searched Chronicling America's database to match phrases not individual words (ngrams)
+
+3 Steps to Text Analysis (have to be done in order):
+1. Data preparation
+-Folder containing text files - each unit of analysis in its own file (each journal/newspaper in its own file)
+-Metadata file (spreadsheet containing info about each file - ie: date, editor, etc *must contain exact file name in order to join datasets)*
+-Document Term Matrix (DTM) (R will generate): creates a dataset with every document as a row and every word as a column - generates a TF-IDF (Term Frequency - Inverse Document Frequency) - the higher the number, the greater the occurance of the word, but doesn't necessarily describe each document accurately *tells you how significant a word is in a corpus* 
+2. Analysis
+3. Advanced topics
+
+Use Data Manipulation worksheet to fix metadata file for Buffalo Bill - break up date seperate_columns; seperatecats
+
+Pick one question to address re Buffalo Bill

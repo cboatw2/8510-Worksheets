@@ -1,0 +1,12 @@
+prefix=/home/cboatw2/software/poppler-cpp
+libdir=/home/cboatw2/software/poppler-cpp/lib64
+includedir=/home/cboatw2/software/poppler-cpp/include
+
+Name: poppler-qt5
+Description: Qt5 bindings for poppler
+Version: 23.03.0
+Requires: 
+Requires.private: poppler = 23.03.0
+
+Libs: -L${libdir} -lpoppler-qt5
+Cflags: -I${includedir}/poppler/qt5

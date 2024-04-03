@@ -1,0 +1,141 @@
+{
+	"BUILD_DIR" : "/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_goostring_autogen",
+	"CMAKE_BINARY_DIR" : "/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/qt5/tests",
+	"CMAKE_EXECUTABLE" : "/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/qt5/tests/CMakeLists.txt"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : [],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_goostring_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_goostring_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_DISABLE_DEPRECATED_BEFORE=0x050C00",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
+		"QT_NO_DEPRECATED_WARNINGS",
+		"QT_STRICT_ITERATORS",
+		"QT_TESTCASE_BUILDDIR=\"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build\"",
+		"QT_TESTLIB_LIB",
+		"QT_WIDGETS_LIB",
+		"QT_XML_LIB",
+		"TESTDATADIR=\"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/../test\""
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/fofi",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/goo",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/poppler",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/qt5/tests",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/qt5/src",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/src",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include/QtCore",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/mkspecs/linux-g++",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include/QtGui",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include/QtXml",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/freetype-2.11.1-76m57kqhivqkpvfms3biao2moicjrof3/include/freetype2",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include/QtWidgets",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include/QtTest",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/mesa-22.0.2-oi2kmliozjqda2wqvri7w57pemz4xoem/include",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/boost-1.79.0-hship335kgdgemh2chsvvd7hswxo6vue/include",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/glib-2.72.1-yqqep7xzv2oayodwhbecrhrfg6hwwjc5/include",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libpng-1.6.37-xmhbfgdjxf6a75nnokls5qtmkmel27zc/include",
+		"/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include",
+		"/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include",
+		"/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/geos-3.9.1-keppaackahbk26r7ujnbsbcddego73o2/include",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/gdal-3.4.3-ftv2m2qfsiebeaic6rfpkvhidfewa3wo/include",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libxml2-2.9.13-6my53cs3ezjrffp6uflwnpoo4sq7kon2/include",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/openssl-1.1.1o-aifcnn354qv4bkqfoxi5ijungeyrdkaa/include",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/proj-7.2.1-e27qsn4gou5i4nh4kommakjenl7go7gw/include",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/sqlite-3.38.5-3hfbzgprj52txgz7u4ipjy3mk7ubei2e/include",
+		"/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include/c++/9.5.0",
+		"/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include/c++/9.5.0/x86_64-pc-linux-gnu",
+		"/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include/c++/9.5.0/backward",
+		"/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include",
+		"/usr/local/include",
+		"/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include-fixed",
+		"/usr/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++",
+		"-dM",
+		"-E",
+		"-c",
+		"/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_goostring_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : 
+	[
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_actualtext_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_annotations_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_attachments_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_dateConversion_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_fonts_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_forms_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_internal_outline_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_lexer_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_links_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_metadata_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_optcontent_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_pagelayout_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_pagemode_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_password_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_permissions_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/check_qt5_search_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/poppler-qt5-attachments_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/poppler-qt5-fonts_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/poppler-qt5-forms_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/poppler-qt5-page-labels_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/poppler-qt5-texts_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/stress-poppler-dir-qt5_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/stress-poppler-qt5_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/stress-threads-qt5_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/test-password-qt5_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/test-poppler-qt5_autogen/mocs_compilation.cpp",
+		"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/test-render-to-file-qt5_autogen/mocs_compilation.cpp"
+	],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/CMakeFiles/check_qt5_goostring_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/bin/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/qt5/tests/CMakeFiles/check_qt5_goostring_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/qt5/tests/check_goostring.cpp",
+			"Mu",
+			null
+		]
+	],
+	"VERBOSITY" : 0
+}

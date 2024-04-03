@@ -1,0 +1,1072 @@
+The system is: Linux - 4.18.0-372.32.1.el8_6.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/3.23.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/3.23.1/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_5cacc/fast && make  -f CMakeFiles/cmTC_5cacc.dir/build.make CMakeFiles/cmTC_5cacc.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -v -o CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Reading specs from /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/specs
+COLLECT_GCC=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc
+Target: x86_64-pc-linux-gnu
+Configured with: /tmp/spack/spack-stage/spack-stage-gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/spack-src/configure --prefix=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --enable-bootstrap --with-mpfr-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include --with-mpfr-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib --with-gmp-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include --with-gmp-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib --with-mpc-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/include --with-mpc-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/zlib-1.2.12-k7a42vgqevrisqxdk3nw62ypakbwgm74/lib' --with-boot-ldflags='-Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/zlib-1.2.12-k7a42vgqevrisqxdk3nw62ypakbwgm74/lib -static-libstdc++ -static-libgcc' --with-build-config=spack
+Thread model: posix
+gcc version 9.5.0 (Spack GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/cc1 -quiet -v /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o -version -o /tmp/cct7tYIS.s
+GNU C17 (Spack GCC) version 9.5.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.5.0, GMP version 6.2.1, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include"
+ignoring nonexistent directory "/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/boost-1.79.0-hship335kgdgemh2chsvvd7hswxo6vue/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/glib-2.72.1-yqqep7xzv2oayodwhbecrhrfg6hwwjc5/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libpng-1.6.37-xmhbfgdjxf6a75nnokls5qtmkmel27zc/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/mesa-22.0.2-oi2kmliozjqda2wqvri7w57pemz4xoem/include
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/geos-3.9.1-keppaackahbk26r7ujnbsbcddego73o2/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/gdal-3.4.3-ftv2m2qfsiebeaic6rfpkvhidfewa3wo/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libxml2-2.9.13-6my53cs3ezjrffp6uflwnpoo4sq7kon2/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/openssl-1.1.1o-aifcnn354qv4bkqfoxi5ijungeyrdkaa/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/proj-7.2.1-e27qsn4gou5i4nh4kommakjenl7go7gw/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/sqlite-3.38.5-3hfbzgprj52txgz7u4ipjy3mk7ubei2e/include
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include
+ /usr/local/include
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include-fixed
+ /usr/include
+End of search list.
+GNU C17 (Spack GCC) version 9.5.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.5.0, GMP version 6.2.1, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 31e2166bfabd0f937710ef4d2a192841
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o /tmp/cct7tYIS.s
+GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-113.el8
+COMPILER_PATH=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_5cacc
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5cacc.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc  -v CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o -o cmTC_5cacc 
+Reading specs from /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/specs
+COLLECT_GCC=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc
+COLLECT_LTO_WRAPPER=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /tmp/spack/spack-stage/spack-stage-gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/spack-src/configure --prefix=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --enable-bootstrap --with-mpfr-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include --with-mpfr-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib --with-gmp-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include --with-gmp-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib --with-mpc-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/include --with-mpc-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/zlib-1.2.12-k7a42vgqevrisqxdk3nw62ypakbwgm74/lib' --with-boot-ldflags='-Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/zlib-1.2.12-k7a42vgqevrisqxdk3nw62ypakbwgm74/lib -static-libstdc++ -static-libgcc' --with-build-config=spack
+Thread model: posix
+gcc version 9.5.0 (Spack GCC) 
+COMPILER_PATH=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5cacc' '-mtune=generic' '-march=x86-64'
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/collect2 -plugin /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/liblto_plugin.so -plugin-opt=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRmTMcd.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5cacc /lib/../lib64/crt1.o /lib/../lib64/crti.o /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbegin.o -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0 -L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../.. CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5cacc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/boost-1.79.0-hship335kgdgemh2chsvvd7hswxo6vue/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/glib-2.72.1-yqqep7xzv2oayodwhbecrhrfg6hwwjc5/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libpng-1.6.37-xmhbfgdjxf6a75nnokls5qtmkmel27zc/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/mesa-22.0.2-oi2kmliozjqda2wqvri7w57pemz4xoem/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/geos-3.9.1-keppaackahbk26r7ujnbsbcddego73o2/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/gdal-3.4.3-ftv2m2qfsiebeaic6rfpkvhidfewa3wo/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libxml2-2.9.13-6my53cs3ezjrffp6uflwnpoo4sq7kon2/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/openssl-1.1.1o-aifcnn354qv4bkqfoxi5ijungeyrdkaa/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/proj-7.2.1-e27qsn4gou5i4nh4kommakjenl7go7gw/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/sqlite-3.38.5-3hfbzgprj52txgz7u4ipjy3mk7ubei2e/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include]
+    add: [/usr/local/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/boost-1.79.0-hship335kgdgemh2chsvvd7hswxo6vue/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/boost-1.79.0-hship335kgdgemh2chsvvd7hswxo6vue/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/glib-2.72.1-yqqep7xzv2oayodwhbecrhrfg6hwwjc5/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/glib-2.72.1-yqqep7xzv2oayodwhbecrhrfg6hwwjc5/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libpng-1.6.37-xmhbfgdjxf6a75nnokls5qtmkmel27zc/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libpng-1.6.37-xmhbfgdjxf6a75nnokls5qtmkmel27zc/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/mesa-22.0.2-oi2kmliozjqda2wqvri7w57pemz4xoem/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/mesa-22.0.2-oi2kmliozjqda2wqvri7w57pemz4xoem/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/geos-3.9.1-keppaackahbk26r7ujnbsbcddego73o2/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/geos-3.9.1-keppaackahbk26r7ujnbsbcddego73o2/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/gdal-3.4.3-ftv2m2qfsiebeaic6rfpkvhidfewa3wo/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/gdal-3.4.3-ftv2m2qfsiebeaic6rfpkvhidfewa3wo/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libxml2-2.9.13-6my53cs3ezjrffp6uflwnpoo4sq7kon2/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libxml2-2.9.13-6my53cs3ezjrffp6uflwnpoo4sq7kon2/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/openssl-1.1.1o-aifcnn354qv4bkqfoxi5ijungeyrdkaa/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/openssl-1.1.1o-aifcnn354qv4bkqfoxi5ijungeyrdkaa/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/proj-7.2.1-e27qsn4gou5i4nh4kommakjenl7go7gw/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/proj-7.2.1-e27qsn4gou5i4nh4kommakjenl7go7gw/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/sqlite-3.38.5-3hfbzgprj52txgz7u4ipjy3mk7ubei2e/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/sqlite-3.38.5-3hfbzgprj52txgz7u4ipjy3mk7ubei2e/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include-fixed] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/boost-1.79.0-hship335kgdgemh2chsvvd7hswxo6vue/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/glib-2.72.1-yqqep7xzv2oayodwhbecrhrfg6hwwjc5/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libpng-1.6.37-xmhbfgdjxf6a75nnokls5qtmkmel27zc/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/mesa-22.0.2-oi2kmliozjqda2wqvri7w57pemz4xoem/include;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/geos-3.9.1-keppaackahbk26r7ujnbsbcddego73o2/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/gdal-3.4.3-ftv2m2qfsiebeaic6rfpkvhidfewa3wo/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libxml2-2.9.13-6my53cs3ezjrffp6uflwnpoo4sq7kon2/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/openssl-1.1.1o-aifcnn354qv4bkqfoxi5ijungeyrdkaa/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/proj-7.2.1-e27qsn4gou5i4nh4kommakjenl7go7gw/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/sqlite-3.38.5-3hfbzgprj52txgz7u4ipjy3mk7ubei2e/include;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include;/usr/local/include;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include-fixed;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/bin/gmake -f Makefile cmTC_5cacc/fast && make  -f CMakeFiles/cmTC_5cacc.dir/build.make CMakeFiles/cmTC_5cacc.dir/build]
+  ignore line: [make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -v -o CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CMakeCCompilerABI.c]
+  ignore line: [Reading specs from /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/specs]
+  ignore line: [COLLECT_GCC=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /tmp/spack/spack-stage/spack-stage-gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/spack-src/configure --prefix=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --enable-bootstrap --with-mpfr-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include --with-mpfr-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib --with-gmp-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include --with-gmp-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib --with-mpc-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/include --with-mpc-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib --without-isl --with-stage1-ldflags='-Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/zlib-1.2.12-k7a42vgqevrisqxdk3nw62ypakbwgm74/lib' --with-boot-ldflags='-Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/zlib-1.2.12-k7a42vgqevrisqxdk3nw62ypakbwgm74/lib -static-libstdc++ -static-libgcc' --with-build-config=spack]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.5.0 (Spack GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/cc1 -quiet -v /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o -version -o /tmp/cct7tYIS.s]
+  ignore line: [GNU C17 (Spack GCC) version 9.5.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.5.0  GMP version 6.2.1  MPFR version 3.1.6-p2  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include"]
+  ignore line: [ignoring nonexistent directory "/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/boost-1.79.0-hship335kgdgemh2chsvvd7hswxo6vue/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/glib-2.72.1-yqqep7xzv2oayodwhbecrhrfg6hwwjc5/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libpng-1.6.37-xmhbfgdjxf6a75nnokls5qtmkmel27zc/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/mesa-22.0.2-oi2kmliozjqda2wqvri7w57pemz4xoem/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/geos-3.9.1-keppaackahbk26r7ujnbsbcddego73o2/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/gdal-3.4.3-ftv2m2qfsiebeaic6rfpkvhidfewa3wo/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libxml2-2.9.13-6my53cs3ezjrffp6uflwnpoo4sq7kon2/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/openssl-1.1.1o-aifcnn354qv4bkqfoxi5ijungeyrdkaa/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/proj-7.2.1-e27qsn4gou5i4nh4kommakjenl7go7gw/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/sqlite-3.38.5-3hfbzgprj52txgz7u4ipjy3mk7ubei2e/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Spack GCC) version 9.5.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.5.0  GMP version 6.2.1  MPFR version 3.1.6-p2  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 31e2166bfabd0f937710ef4d2a192841]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o /tmp/cct7tYIS.s]
+  ignore line: [GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-113.el8]
+  ignore line: [COMPILER_PATH=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_5cacc]
+  ignore line: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5cacc.dir/link.txt --verbose=1]
+  ignore line: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc  -v CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o -o cmTC_5cacc ]
+  ignore line: [Reading specs from /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/specs]
+  ignore line: [COLLECT_GCC=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /tmp/spack/spack-stage/spack-stage-gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/spack-src/configure --prefix=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --enable-bootstrap --with-mpfr-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include --with-mpfr-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib --with-gmp-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include --with-gmp-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib --with-mpc-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/include --with-mpc-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib --without-isl --with-stage1-ldflags='-Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/zlib-1.2.12-k7a42vgqevrisqxdk3nw62ypakbwgm74/lib' --with-boot-ldflags='-Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/zlib-1.2.12-k7a42vgqevrisqxdk3nw62ypakbwgm74/lib -static-libstdc++ -static-libgcc' --with-build-config=spack]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.5.0 (Spack GCC) ]
+  ignore line: [COMPILER_PATH=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5cacc' '-mtune=generic' '-march=x86-64']
+  link line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/collect2 -plugin /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/liblto_plugin.so -plugin-opt=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRmTMcd.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5cacc /lib/../lib64/crt1.o /lib/../lib64/crti.o /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbegin.o -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0 -L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../.. CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccRmTMcd.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_5cacc] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbegin.o] ==> obj [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbegin.o]
+    arg [-rpath] ==> ignore
+    arg [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64] ==> ignore
+    arg [-L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0] ==> dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0]
+    arg [-L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64] ==> dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../..] ==> dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../..]
+    arg [CMakeFiles/cmTC_5cacc.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtend.o] ==> obj [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0]
+  collapse library dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../..] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbegin.o;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64;/lib64;/usr/lib64;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_64ac2/fast && make  -f CMakeFiles/cmTC_64ac2.dir/build.make CMakeFiles/cmTC_64ac2.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++   -v -o CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp
+Reading specs from /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/specs
+COLLECT_GCC=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++
+Target: x86_64-pc-linux-gnu
+Configured with: /tmp/spack/spack-stage/spack-stage-gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/spack-src/configure --prefix=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --enable-bootstrap --with-mpfr-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include --with-mpfr-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib --with-gmp-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include --with-gmp-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib --with-mpc-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/include --with-mpc-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/zlib-1.2.12-k7a42vgqevrisqxdk3nw62ypakbwgm74/lib' --with-boot-ldflags='-Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/zlib-1.2.12-k7a42vgqevrisqxdk3nw62ypakbwgm74/lib -static-libstdc++ -static-libgcc' --with-build-config=spack
+Thread model: posix
+gcc version 9.5.0 (Spack GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/cc1plus -quiet -v -D_GNU_SOURCE /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccqhhUDH.s
+GNU C++14 (Spack GCC) version 9.5.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.5.0, GMP version 6.2.1, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include"
+ignoring nonexistent directory "/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/boost-1.79.0-hship335kgdgemh2chsvvd7hswxo6vue/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/glib-2.72.1-yqqep7xzv2oayodwhbecrhrfg6hwwjc5/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libpng-1.6.37-xmhbfgdjxf6a75nnokls5qtmkmel27zc/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/mesa-22.0.2-oi2kmliozjqda2wqvri7w57pemz4xoem/include
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/geos-3.9.1-keppaackahbk26r7ujnbsbcddego73o2/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/gdal-3.4.3-ftv2m2qfsiebeaic6rfpkvhidfewa3wo/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libxml2-2.9.13-6my53cs3ezjrffp6uflwnpoo4sq7kon2/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/openssl-1.1.1o-aifcnn354qv4bkqfoxi5ijungeyrdkaa/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/proj-7.2.1-e27qsn4gou5i4nh4kommakjenl7go7gw/include
+ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/sqlite-3.38.5-3hfbzgprj52txgz7u4ipjy3mk7ubei2e/include
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/x86_64-pc-linux-gnu
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/backward
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include
+ /usr/local/include
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include-fixed
+ /usr/include
+End of search list.
+GNU C++14 (Spack GCC) version 9.5.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.5.0, GMP version 6.2.1, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 77d0bbb3d7046669c63c65ff4e5f0769
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccqhhUDH.s
+GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-113.el8
+COMPILER_PATH=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_64ac2
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64ac2.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++  -v CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_64ac2 
+Reading specs from /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/specs
+COLLECT_GCC=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++
+COLLECT_LTO_WRAPPER=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /tmp/spack/spack-stage/spack-stage-gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/spack-src/configure --prefix=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --enable-bootstrap --with-mpfr-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include --with-mpfr-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib --with-gmp-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include --with-gmp-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib --with-mpc-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/include --with-mpc-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/zlib-1.2.12-k7a42vgqevrisqxdk3nw62ypakbwgm74/lib' --with-boot-ldflags='-Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib -Wl,-rpath,/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/zlib-1.2.12-k7a42vgqevrisqxdk3nw62ypakbwgm74/lib -static-libstdc++ -static-libgcc' --with-build-config=spack
+Thread model: posix
+gcc version 9.5.0 (Spack GCC) 
+COMPILER_PATH=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_64ac2' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/collect2 -plugin /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/liblto_plugin.so -plugin-opt=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccscphK1.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_64ac2 /lib/../lib64/crt1.o /lib/../lib64/crti.o /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbegin.o -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0 -L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../.. CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_64ac2' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/boost-1.79.0-hship335kgdgemh2chsvvd7hswxo6vue/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/glib-2.72.1-yqqep7xzv2oayodwhbecrhrfg6hwwjc5/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libpng-1.6.37-xmhbfgdjxf6a75nnokls5qtmkmel27zc/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/mesa-22.0.2-oi2kmliozjqda2wqvri7w57pemz4xoem/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/geos-3.9.1-keppaackahbk26r7ujnbsbcddego73o2/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/gdal-3.4.3-ftv2m2qfsiebeaic6rfpkvhidfewa3wo/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libxml2-2.9.13-6my53cs3ezjrffp6uflwnpoo4sq7kon2/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/openssl-1.1.1o-aifcnn354qv4bkqfoxi5ijungeyrdkaa/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/proj-7.2.1-e27qsn4gou5i4nh4kommakjenl7go7gw/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/sqlite-3.38.5-3hfbzgprj52txgz7u4ipjy3mk7ubei2e/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/x86_64-pc-linux-gnu]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/backward]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include]
+    add: [/usr/local/include]
+    add: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/boost-1.79.0-hship335kgdgemh2chsvvd7hswxo6vue/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/boost-1.79.0-hship335kgdgemh2chsvvd7hswxo6vue/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/glib-2.72.1-yqqep7xzv2oayodwhbecrhrfg6hwwjc5/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/glib-2.72.1-yqqep7xzv2oayodwhbecrhrfg6hwwjc5/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libpng-1.6.37-xmhbfgdjxf6a75nnokls5qtmkmel27zc/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libpng-1.6.37-xmhbfgdjxf6a75nnokls5qtmkmel27zc/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/mesa-22.0.2-oi2kmliozjqda2wqvri7w57pemz4xoem/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/mesa-22.0.2-oi2kmliozjqda2wqvri7w57pemz4xoem/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/geos-3.9.1-keppaackahbk26r7ujnbsbcddego73o2/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/geos-3.9.1-keppaackahbk26r7ujnbsbcddego73o2/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/gdal-3.4.3-ftv2m2qfsiebeaic6rfpkvhidfewa3wo/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/gdal-3.4.3-ftv2m2qfsiebeaic6rfpkvhidfewa3wo/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libxml2-2.9.13-6my53cs3ezjrffp6uflwnpoo4sq7kon2/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libxml2-2.9.13-6my53cs3ezjrffp6uflwnpoo4sq7kon2/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/openssl-1.1.1o-aifcnn354qv4bkqfoxi5ijungeyrdkaa/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/openssl-1.1.1o-aifcnn354qv4bkqfoxi5ijungeyrdkaa/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/proj-7.2.1-e27qsn4gou5i4nh4kommakjenl7go7gw/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/proj-7.2.1-e27qsn4gou5i4nh4kommakjenl7go7gw/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/sqlite-3.38.5-3hfbzgprj52txgz7u4ipjy3mk7ubei2e/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/sqlite-3.38.5-3hfbzgprj52txgz7u4ipjy3mk7ubei2e/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include/c++/9.5.0]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/x86_64-pc-linux-gnu] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include/c++/9.5.0/x86_64-pc-linux-gnu]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/backward] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include/c++/9.5.0/backward]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include-fixed] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/boost-1.79.0-hship335kgdgemh2chsvvd7hswxo6vue/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/glib-2.72.1-yqqep7xzv2oayodwhbecrhrfg6hwwjc5/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libpng-1.6.37-xmhbfgdjxf6a75nnokls5qtmkmel27zc/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/mesa-22.0.2-oi2kmliozjqda2wqvri7w57pemz4xoem/include;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/geos-3.9.1-keppaackahbk26r7ujnbsbcddego73o2/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/gdal-3.4.3-ftv2m2qfsiebeaic6rfpkvhidfewa3wo/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libxml2-2.9.13-6my53cs3ezjrffp6uflwnpoo4sq7kon2/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/openssl-1.1.1o-aifcnn354qv4bkqfoxi5ijungeyrdkaa/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/proj-7.2.1-e27qsn4gou5i4nh4kommakjenl7go7gw/include;/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/sqlite-3.38.5-3hfbzgprj52txgz7u4ipjy3mk7ubei2e/include;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include/c++/9.5.0;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include/c++/9.5.0/x86_64-pc-linux-gnu;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include/c++/9.5.0/backward;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include;/usr/local/include;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include-fixed;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/bin/gmake -f Makefile cmTC_64ac2/fast && make  -f CMakeFiles/cmTC_64ac2.dir/build.make CMakeFiles/cmTC_64ac2.dir/build]
+  ignore line: [make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++   -v -o CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Reading specs from /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/specs]
+  ignore line: [COLLECT_GCC=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /tmp/spack/spack-stage/spack-stage-gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/spack-src/configure --prefix=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --enable-bootstrap --with-mpfr-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include --with-mpfr-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib --with-gmp-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include --with-gmp-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib --with-mpc-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/include --with-mpc-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib --without-isl --with-stage1-ldflags='-Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/zlib-1.2.12-k7a42vgqevrisqxdk3nw62ypakbwgm74/lib' --with-boot-ldflags='-Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/zlib-1.2.12-k7a42vgqevrisqxdk3nw62ypakbwgm74/lib -static-libstdc++ -static-libgcc' --with-build-config=spack]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.5.0 (Spack GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/cc1plus -quiet -v -D_GNU_SOURCE /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccqhhUDH.s]
+  ignore line: [GNU C++14 (Spack GCC) version 9.5.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.5.0  GMP version 6.2.1  MPFR version 3.1.6-p2  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include"]
+  ignore line: [ignoring nonexistent directory "/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/boost-1.79.0-hship335kgdgemh2chsvvd7hswxo6vue/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/qt-5.15.4-yvbiz356g27ven3xj6awwnmexchzvx4e/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/glib-2.72.1-yqqep7xzv2oayodwhbecrhrfg6hwwjc5/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libpng-1.6.37-xmhbfgdjxf6a75nnokls5qtmkmel27zc/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/mesa-22.0.2-oi2kmliozjqda2wqvri7w57pemz4xoem/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/geos-3.9.1-keppaackahbk26r7ujnbsbcddego73o2/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/gdal-3.4.3-ftv2m2qfsiebeaic6rfpkvhidfewa3wo/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/libxml2-2.9.13-6my53cs3ezjrffp6uflwnpoo4sq7kon2/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/openssl-1.1.1o-aifcnn354qv4bkqfoxi5ijungeyrdkaa/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/proj-7.2.1-e27qsn4gou5i4nh4kommakjenl7go7gw/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/sqlite-3.38.5-3hfbzgprj52txgz7u4ipjy3mk7ubei2e/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/x86_64-pc-linux-gnu]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/backward]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (Spack GCC) version 9.5.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.5.0  GMP version 6.2.1  MPFR version 3.1.6-p2  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 77d0bbb3d7046669c63c65ff4e5f0769]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccqhhUDH.s]
+  ignore line: [GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-113.el8]
+  ignore line: [COMPILER_PATH=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_64ac2]
+  ignore line: [/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64ac2.dir/link.txt --verbose=1]
+  ignore line: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++  -v CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_64ac2 ]
+  ignore line: [Reading specs from /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/specs]
+  ignore line: [COLLECT_GCC=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /tmp/spack/spack-stage/spack-stage-gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/spack-src/configure --prefix=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --enable-bootstrap --with-mpfr-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/include --with-mpfr-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib --with-gmp-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/include --with-gmp-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib --with-mpc-include=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/include --with-mpc-lib=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib --without-isl --with-stage1-ldflags='-Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/zlib-1.2.12-k7a42vgqevrisqxdk3nw62ypakbwgm74/lib' --with-boot-ldflags='-Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gmp-6.2.1-tg3iwvk2jngsfidpit6jt4fcpxwbgka6/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpc-1.1.0-rnvyrqnojahelnfyzzargfgzynm6u23a/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/mpfr-3.1.6-ddy3v4htzbazjnyfn7jmxf2coq7vndtf/lib -Wl -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/zlib-1.2.12-k7a42vgqevrisqxdk3nw62ypakbwgm74/lib -static-libstdc++ -static-libgcc' --with-build-config=spack]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.5.0 (Spack GCC) ]
+  ignore line: [COMPILER_PATH=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_64ac2' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/collect2 -plugin /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/liblto_plugin.so -plugin-opt=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccscphK1.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_64ac2 /lib/../lib64/crt1.o /lib/../lib64/crti.o /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbegin.o -rpath /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64 -L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0 -L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../.. CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/libexec/gcc/x86_64-pc-linux-gnu/9.5.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccscphK1.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_64ac2] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbegin.o] ==> obj [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbegin.o]
+    arg [-rpath] ==> ignore
+    arg [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64] ==> ignore
+    arg [-L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0] ==> dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0]
+    arg [-L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64] ==> dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../..] ==> dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../..]
+    arg [CMakeFiles/cmTC_64ac2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtend.o] ==> obj [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0]
+  collapse library dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../..] ==> [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbegin.o;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib/gcc/x86_64-pc-linux-gnu/9.5.0;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib64;/lib64;/usr/lib64;/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/lib]
+  implicit fwks: []
+
+
+Performing C++ SOURCE FILE Test GCC_HAS_AS_NEEDED succeeded with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_13bb6/fast && make  -f CMakeFiles/cmTC_13bb6.dir/build.make CMakeFiles/cmTC_13bb6.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_13bb6.dir/src.cxx.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++ -DGCC_HAS_AS_NEEDED  -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  -o CMakeFiles/cmTC_13bb6.dir/src.cxx.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_13bb6
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13bb6.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++ -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  CMakeFiles/cmTC_13bb6.dir/src.cxx.o -o cmTC_13bb6  -Wl,--as-needed 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test HAVE_JPEG_MEM_SRC succeeded with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_88992/fast && make  -f CMakeFiles/cmTC_88992.dir/build.make CMakeFiles/cmTC_88992.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_88992.dir/src.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -DHAVE_JPEG_MEM_SRC  -std=c99 -D_DEFAULT_SOURCE  -O2 -g  -std=c11 -o CMakeFiles/cmTC_88992.dir/src.c.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_88992
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88992.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -std=c99 -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_88992.dir/src.c.o -o cmTC_88992  /usr/lib64/libjpeg.so 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+    #include <stddef.h>
+    #include <stdio.h>
+    #include <jpeglib.h>
+    int main() { struct jpeg_decompress_struct info; jpeg_mem_src(&info, 0, 0); return 0; }
+Performing C SOURCE FILE Test Iconv_IS_BUILT_IN succeeded with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_08cd6/fast && make  -f CMakeFiles/cmTC_08cd6.dir/build.make CMakeFiles/cmTC_08cd6.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_08cd6.dir/src.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -DIconv_IS_BUILT_IN  -std=c99 -D_DEFAULT_SOURCE  -O2 -g  -std=c11 -o CMakeFiles/cmTC_08cd6.dir/src.c.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_08cd6
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08cd6.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -std=c99 -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_08cd6.dir/src.c.o -o cmTC_08cd6 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+      #include <stddef.h>
+      #include <iconv.h>
+      int main() {
+        char *a, *b;
+        size_t i, j;
+        iconv_t ic;
+        ic = iconv_open("to", "from");
+        iconv(ic, &a, &i, &b, &j);
+        iconv_close(ic);
+      }
+      
+Determining if files dlfcn.h exist passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_6f2e2/fast && make  -f CMakeFiles/cmTC_6f2e2.dir/build.make CMakeFiles/cmTC_6f2e2.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6f2e2.dir/HAVE_DLFCN_H.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g  -std=c11 -o CMakeFiles/cmTC_6f2e2.dir/HAVE_DLFCN_H.c.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CheckIncludeFiles/HAVE_DLFCN_H.c
+Linking C executable cmTC_6f2e2
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f2e2.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_6f2e2.dir/HAVE_DLFCN_H.c.o -o cmTC_6f2e2 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files fcntl.h exist passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_ad63b/fast && make  -f CMakeFiles/cmTC_ad63b.dir/build.make CMakeFiles/cmTC_ad63b.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ad63b.dir/HAVE_FCNTL_H.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g  -std=c11 -o CMakeFiles/cmTC_ad63b.dir/HAVE_FCNTL_H.c.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CheckIncludeFiles/HAVE_FCNTL_H.c
+Linking C executable cmTC_ad63b
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad63b.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_ad63b.dir/HAVE_FCNTL_H.c.o -o cmTC_ad63b 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files stdlib.h exist passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_8be4f/fast && make  -f CMakeFiles/cmTC_8be4f.dir/build.make CMakeFiles/cmTC_8be4f.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8be4f.dir/HAVE_STDLIB_H.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g  -std=c11 -o CMakeFiles/cmTC_8be4f.dir/HAVE_STDLIB_H.c.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CheckIncludeFiles/HAVE_STDLIB_H.c
+Linking C executable cmTC_8be4f
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8be4f.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_8be4f.dir/HAVE_STDLIB_H.c.o -o cmTC_8be4f 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files sys/mman.h exist passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_5f622/fast && make  -f CMakeFiles/cmTC_5f622.dir/build.make CMakeFiles/cmTC_5f622.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5f622.dir/HAVE_SYS_MMAN_H.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g  -std=c11 -o CMakeFiles/cmTC_5f622.dir/HAVE_SYS_MMAN_H.c.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_MMAN_H.c
+Linking C executable cmTC_5f622
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f622.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_5f622.dir/HAVE_SYS_MMAN_H.c.o -o cmTC_5f622 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files sys/stat.h exist passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_27413/fast && make  -f CMakeFiles/cmTC_27413.dir/build.make CMakeFiles/cmTC_27413.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_27413.dir/HAVE_SYS_STAT_H.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g  -std=c11 -o CMakeFiles/cmTC_27413.dir/HAVE_SYS_STAT_H.c.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_STAT_H.c
+Linking C executable cmTC_27413
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27413.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_27413.dir/HAVE_SYS_STAT_H.c.o -o cmTC_27413 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files unistd.h exist passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_c28d5/fast && make  -f CMakeFiles/cmTC_c28d5.dir/build.make CMakeFiles/cmTC_c28d5.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c28d5.dir/HAVE_UNISTD_H.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g  -std=c11 -o CMakeFiles/cmTC_c28d5.dir/HAVE_UNISTD_H.c.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CheckIncludeFiles/HAVE_UNISTD_H.c
+Linking C executable cmTC_c28d5
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c28d5.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_c28d5.dir/HAVE_UNISTD_H.c.o -o cmTC_c28d5 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the fseeko exist passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_94732/fast && make  -f CMakeFiles/cmTC_94732.dir/build.make CMakeFiles/cmTC_94732.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_94732.dir/CheckSymbolExists.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g  -std=c11 -o CMakeFiles/cmTC_94732.dir/CheckSymbolExists.c.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_94732
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94732.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_94732.dir/CheckSymbolExists.c.o -o cmTC_94732 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+File /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fseeko
+  return ((int*)(&fseeko))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function pread64 exists passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_c13b3/fast && make  -f CMakeFiles/cmTC_c13b3.dir/build.make CMakeFiles/cmTC_c13b3.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c13b3.dir/CheckFunctionExists.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=pread64 -O2 -g  -std=c11 -o CMakeFiles/cmTC_c13b3.dir/CheckFunctionExists.c.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c13b3
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c13b3.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=pread64 -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_c13b3.dir/CheckFunctionExists.c.o -o cmTC_c13b3 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function lseek64 exists passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_37844/fast && make  -f CMakeFiles/cmTC_37844.dir/build.make CMakeFiles/cmTC_37844.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_37844.dir/CheckFunctionExists.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=lseek64 -O2 -g  -std=c11 -o CMakeFiles/cmTC_37844.dir/CheckFunctionExists.c.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_37844
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37844.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=lseek64 -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_37844.dir/CheckFunctionExists.c.o -o cmTC_37844 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gmtime_r exists passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_bb3bd/fast && make  -f CMakeFiles/cmTC_bb3bd.dir/build.make CMakeFiles/cmTC_bb3bd.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bb3bd.dir/CheckFunctionExists.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=gmtime_r -O2 -g  -std=c11 -o CMakeFiles/cmTC_bb3bd.dir/CheckFunctionExists.c.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bb3bd
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb3bd.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=gmtime_r -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_bb3bd.dir/CheckFunctionExists.c.o -o cmTC_bb3bd 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function timegm exists passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_5c208/fast && make  -f CMakeFiles/cmTC_5c208.dir/build.make CMakeFiles/cmTC_5c208.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5c208.dir/CheckFunctionExists.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=timegm -O2 -g  -std=c11 -o CMakeFiles/cmTC_5c208.dir/CheckFunctionExists.c.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5c208
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c208.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=timegm -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_5c208.dir/CheckFunctionExists.c.o -o cmTC_5c208 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gettimeofday exists passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_c0f9c/fast && make  -f CMakeFiles/cmTC_c0f9c.dir/build.make CMakeFiles/cmTC_c0f9c.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c0f9c.dir/CheckFunctionExists.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=gettimeofday -O2 -g  -std=c11 -o CMakeFiles/cmTC_c0f9c.dir/CheckFunctionExists.c.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c0f9c
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0f9c.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=gettimeofday -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_c0f9c.dir/CheckFunctionExists.c.o -o cmTC_c0f9c 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function localtime_r exists passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_ee503/fast && make  -f CMakeFiles/cmTC_ee503.dir/build.make CMakeFiles/cmTC_ee503.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ee503.dir/CheckFunctionExists.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=localtime_r -O2 -g  -std=c11 -o CMakeFiles/cmTC_ee503.dir/CheckFunctionExists.c.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ee503
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee503.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=localtime_r -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_ee503.dir/CheckFunctionExists.c.o -o cmTC_ee503 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function popen exists passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_fbce9/fast && make  -f CMakeFiles/cmTC_fbce9.dir/build.make CMakeFiles/cmTC_fbce9.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fbce9.dir/CheckFunctionExists.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=popen -O2 -g  -std=c11 -o CMakeFiles/cmTC_fbce9.dir/CheckFunctionExists.c.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fbce9
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbce9.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=popen -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_fbce9.dir/CheckFunctionExists.c.o -o cmTC_fbce9 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function mkstemp exists passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_d0f22/fast && make  -f CMakeFiles/cmTC_d0f22.dir/build.make CMakeFiles/cmTC_d0f22.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d0f22.dir/CheckFunctionExists.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=mkstemp -O2 -g  -std=c11 -o CMakeFiles/cmTC_d0f22.dir/CheckFunctionExists.c.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d0f22
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0f22.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=mkstemp -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_d0f22.dir/CheckFunctionExists.c.o -o cmTC_d0f22 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function strtok_r exists passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_88dfa/fast && make  -f CMakeFiles/cmTC_88dfa.dir/build.make CMakeFiles/cmTC_88dfa.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_88dfa.dir/CheckFunctionExists.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=strtok_r -O2 -g  -std=c11 -o CMakeFiles/cmTC_88dfa.dir/CheckFunctionExists.c.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_88dfa
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88dfa.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=strtok_r -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_88dfa.dir/CheckFunctionExists.c.o -o cmTC_88dfa 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test HAVE_DIRENT_H succeeded with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_32d82/fast && make  -f CMakeFiles/cmTC_32d82.dir/build.make CMakeFiles/cmTC_32d82.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_32d82.dir/src.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -DHAVE_DIRENT_H  -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g  -std=c11 -o CMakeFiles/cmTC_32d82.dir/src.c.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c:5:8: warning: unused variable 'd' [-Wunused-variable]
+    5 |   DIR* d = 0;
+      |        ^
+Linking C executable cmTC_32d82
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32d82.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_32d82.dir/src.c.o -o cmTC_32d82 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <dirent.h>
+
+int main(int argc, char *argv[])
+{
+  DIR* d = 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_SYS_DIR_H succeeded with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_3b99a/fast && make  -f CMakeFiles/cmTC_3b99a.dir/build.make CMakeFiles/cmTC_3b99a.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3b99a.dir/src.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -DHAVE_SYS_DIR_H  -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g  -std=c11 -o CMakeFiles/cmTC_3b99a.dir/src.c.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c:5:8: warning: unused variable 'd' [-Wunused-variable]
+    5 |   DIR* d = 0;
+      |        ^
+Linking C executable cmTC_3b99a
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b99a.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_3b99a.dir/src.c.o -o cmTC_3b99a 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <sys/dir.h>
+
+int main(int argc, char *argv[])
+{
+  DIR* d = 0;
+  return 0;
+}
+
+Determining if the function nanosleep exists passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_1db3b/fast && make  -f CMakeFiles/cmTC_1db3b.dir/build.make CMakeFiles/cmTC_1db3b.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1db3b.dir/CheckFunctionExists.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=nanosleep -O2 -g  -std=c11 -o CMakeFiles/cmTC_1db3b.dir/CheckFunctionExists.c.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1db3b
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1db3b.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=nanosleep -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_1db3b.dir/CheckFunctionExists.c.o -o cmTC_1db3b 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test COMPILER_HAS_HIDDEN_VISIBILITY succeeded with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_7abcf/fast && make  -f CMakeFiles/cmTC_7abcf.dir/build.make CMakeFiles/cmTC_7abcf.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7abcf.dir/src.cxx.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wcast-align -Wformat-security -Wframe-larger-than=65536 -Wlogical-op -Wmissing-format-attribute -Wnon-virtual-dtor -Woverloaded-virtual -Wmissing-declarations -Wundef -Wzero-as-null-pointer-constant -Wshadow -Wsuggest-override -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  -O2 -g    -fvisibility=hidden -std=c++17 -o CMakeFiles/cmTC_7abcf.dir/src.cxx.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7abcf
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7abcf.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++ -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wcast-align -Wformat-security -Wframe-larger-than=65536 -Wlogical-op -Wmissing-format-attribute -Wnon-virtual-dtor -Woverloaded-virtual -Wmissing-declarations -Wundef -Wzero-as-null-pointer-constant -Wshadow -Wsuggest-override -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_7abcf.dir/src.cxx.o -o cmTC_7abcf 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY succeeded with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_31045/fast && make  -f CMakeFiles/cmTC_31045.dir/build.make CMakeFiles/cmTC_31045.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_31045.dir/src.cxx.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wcast-align -Wformat-security -Wframe-larger-than=65536 -Wlogical-op -Wmissing-format-attribute -Wnon-virtual-dtor -Woverloaded-virtual -Wmissing-declarations -Wundef -Wzero-as-null-pointer-constant -Wshadow -Wsuggest-override -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  -O2 -g    -fvisibility-inlines-hidden -std=c++17 -o CMakeFiles/cmTC_31045.dir/src.cxx.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_31045
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31045.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++ -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wcast-align -Wformat-security -Wframe-larger-than=65536 -Wlogical-op -Wmissing-format-attribute -Wnon-virtual-dtor -Woverloaded-virtual -Wmissing-declarations -Wundef -Wzero-as-null-pointer-constant -Wshadow -Wsuggest-override -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_31045.dir/src.cxx.o -o cmTC_31045 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_DEPRECATED_ATTR succeeded with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_eb289/fast && make  -f CMakeFiles/cmTC_eb289.dir/build.make CMakeFiles/cmTC_eb289.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_eb289.dir/src.cxx.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++ -DCOMPILER_HAS_DEPRECATED_ATTR  -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wcast-align -Wformat-security -Wframe-larger-than=65536 -Wlogical-op -Wmissing-format-attribute -Wnon-virtual-dtor -Woverloaded-virtual -Wmissing-declarations -Wundef -Wzero-as-null-pointer-constant -Wshadow -Wsuggest-override -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  -O2 -g  -std=c++17 -o CMakeFiles/cmTC_eb289.dir/src.cxx.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.cxx
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.cxx:1:37: warning: no previous declaration for 'int somefunc()' [-Wmissing-declarations]
+    1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
+      |                                     ^~~~~~~~
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.cxx: In function 'int main()':
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.cxx:2:34: warning: 'int somefunc()' is deprecated [-Wdeprecated-declarations]
+    2 |     int main() { return somefunc();}
+      |                                  ^
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.cxx:1:37: note: declared here
+    1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
+      |                                     ^~~~~~~~
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.cxx:2:34: warning: 'int somefunc()' is deprecated [-Wdeprecated-declarations]
+    2 |     int main() { return somefunc();}
+      |                                  ^
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.cxx:1:37: note: declared here
+    1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
+      |                                     ^~~~~~~~
+Linking CXX executable cmTC_eb289
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb289.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++ -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wcast-align -Wformat-security -Wframe-larger-than=65536 -Wlogical-op -Wmissing-format-attribute -Wnon-virtual-dtor -Woverloaded-virtual -Wmissing-declarations -Wundef -Wzero-as-null-pointer-constant -Wshadow -Wsuggest-override -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_eb289.dir/src.cxx.o -o cmTC_eb289 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+__attribute__((__deprecated__)) int somefunc() { return 0; }
+    int main() { return somefunc();}
+Determining if the CAIRO_HAS_PNG_FUNCTIONS exist passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_742ca/fast && make  -f CMakeFiles/cmTC_742ca.dir/build.make CMakeFiles/cmTC_742ca.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_742ca.dir/CheckSymbolExists.cxx.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++  -I/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include/cairo -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wcast-align -Wformat-security -Wframe-larger-than=65536 -Wlogical-op -Wmissing-format-attribute -Wnon-virtual-dtor -Woverloaded-virtual -Wmissing-declarations -Wundef -Wzero-as-null-pointer-constant -Wshadow -Wsuggest-override -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  -O2 -g  -std=c++17 -o CMakeFiles/cmTC_742ca.dir/CheckSymbolExists.cxx.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_742ca
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_742ca.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++ -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wcast-align -Wformat-security -Wframe-larger-than=65536 -Wlogical-op -Wmissing-format-attribute -Wnon-virtual-dtor -Woverloaded-virtual -Wmissing-declarations -Wundef -Wzero-as-null-pointer-constant -Wshadow -Wsuggest-override -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_742ca.dir/CheckSymbolExists.cxx.o -o cmTC_742ca 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+File /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <cairo.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CAIRO_HAS_PNG_FUNCTIONS
+  return ((int*)(&CAIRO_HAS_PNG_FUNCTIONS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the CAIRO_HAS_PDF_SURFACE exist passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_0ed19/fast && make  -f CMakeFiles/cmTC_0ed19.dir/build.make CMakeFiles/cmTC_0ed19.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0ed19.dir/CheckSymbolExists.cxx.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++  -I/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include/cairo -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wcast-align -Wformat-security -Wframe-larger-than=65536 -Wlogical-op -Wmissing-format-attribute -Wnon-virtual-dtor -Woverloaded-virtual -Wmissing-declarations -Wundef -Wzero-as-null-pointer-constant -Wshadow -Wsuggest-override -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  -O2 -g  -std=c++17 -o CMakeFiles/cmTC_0ed19.dir/CheckSymbolExists.cxx.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_0ed19
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ed19.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++ -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wcast-align -Wformat-security -Wframe-larger-than=65536 -Wlogical-op -Wmissing-format-attribute -Wnon-virtual-dtor -Woverloaded-virtual -Wmissing-declarations -Wundef -Wzero-as-null-pointer-constant -Wshadow -Wsuggest-override -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_0ed19.dir/CheckSymbolExists.cxx.o -o cmTC_0ed19 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+File /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <cairo.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CAIRO_HAS_PDF_SURFACE
+  return ((int*)(&CAIRO_HAS_PDF_SURFACE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the CAIRO_HAS_PS_SURFACE exist passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_0242b/fast && make  -f CMakeFiles/cmTC_0242b.dir/build.make CMakeFiles/cmTC_0242b.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0242b.dir/CheckSymbolExists.cxx.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++  -I/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include/cairo -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wcast-align -Wformat-security -Wframe-larger-than=65536 -Wlogical-op -Wmissing-format-attribute -Wnon-virtual-dtor -Woverloaded-virtual -Wmissing-declarations -Wundef -Wzero-as-null-pointer-constant -Wshadow -Wsuggest-override -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  -O2 -g  -std=c++17 -o CMakeFiles/cmTC_0242b.dir/CheckSymbolExists.cxx.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_0242b
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0242b.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++ -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wcast-align -Wformat-security -Wframe-larger-than=65536 -Wlogical-op -Wmissing-format-attribute -Wnon-virtual-dtor -Woverloaded-virtual -Wmissing-declarations -Wundef -Wzero-as-null-pointer-constant -Wshadow -Wsuggest-override -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_0242b.dir/CheckSymbolExists.cxx.o -o cmTC_0242b 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+File /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <cairo.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CAIRO_HAS_PS_SURFACE
+  return ((int*)(&CAIRO_HAS_PS_SURFACE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the CAIRO_HAS_SVG_SURFACE exist passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_7f516/fast && make  -f CMakeFiles/cmTC_7f516.dir/build.make CMakeFiles/cmTC_7f516.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7f516.dir/CheckSymbolExists.cxx.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++  -I/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include/cairo -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wcast-align -Wformat-security -Wframe-larger-than=65536 -Wlogical-op -Wmissing-format-attribute -Wnon-virtual-dtor -Woverloaded-virtual -Wmissing-declarations -Wundef -Wzero-as-null-pointer-constant -Wshadow -Wsuggest-override -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  -O2 -g  -std=c++17 -o CMakeFiles/cmTC_7f516.dir/CheckSymbolExists.cxx.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_7f516
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f516.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++ -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wcast-align -Wformat-security -Wframe-larger-than=65536 -Wlogical-op -Wmissing-format-attribute -Wnon-virtual-dtor -Woverloaded-virtual -Wmissing-declarations -Wundef -Wzero-as-null-pointer-constant -Wshadow -Wsuggest-override -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_7f516.dir/CheckSymbolExists.cxx.o -o cmTC_7f516 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+File /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <cairo.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CAIRO_HAS_SVG_SURFACE
+  return ((int*)(&CAIRO_HAS_SVG_SURFACE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_ed974/fast && make  -f CMakeFiles/cmTC_ed974.dir/build.make CMakeFiles/cmTC_ed974.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed974.dir/CheckIncludeFile.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc  -I/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include/cairo -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g  -std=c11 -o CMakeFiles/cmTC_ed974.dir/CheckIncludeFile.c.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ed974
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed974.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_ed974.dir/CheckIncludeFile.c.o -o cmTC_ed974 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_c1c91/fast && make  -f CMakeFiles/cmTC_c1c91.dir/build.make CMakeFiles/cmTC_c1c91.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c1c91.dir/CheckFunctionExists.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=pthread_create -O2 -g  -std=c11 -o CMakeFiles/cmTC_c1c91.dir/CheckFunctionExists.c.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c1c91
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1c91.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=pthread_create -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_c1c91.dir/CheckFunctionExists.c.o -o cmTC_c1c91  -lpthread 
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+
+
+

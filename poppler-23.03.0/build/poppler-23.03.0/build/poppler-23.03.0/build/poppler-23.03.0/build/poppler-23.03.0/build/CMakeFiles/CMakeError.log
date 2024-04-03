@@ -1,0 +1,183 @@
+Performing C++ SOURCE FILE Test ICONV_SECOND_ARGUMENT_IS_CONST failed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_fbede/fast && make  -f CMakeFiles/cmTC_fbede.dir/build.make CMakeFiles/cmTC_fbede.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fbede.dir/src.cxx.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/g++ -DICONV_SECOND_ARGUMENT_IS_CONST  -fno-exceptions -fno-check-new -fno-common -fno-operator-names -D_DEFAULT_SOURCE  -O2 -g  -std=c++17 -o CMakeFiles/cmTC_fbede.dir/src.cxx.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.cxx
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.cxx: In function 'int main()':
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.cxx:9:19: error: invalid conversion from 'const char**' to 'char**' [-fpermissive]
+    9 |       iconv(conv, &in, &ilen, &out, &olen);
+      |                   ^~~
+      |                   |
+      |                   const char**
+In file included from /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.cxx:2:
+/usr/include/iconv.h:42:54: note:   initializing argument 2 of 'size_t iconv(iconv_t, char**, size_t*, char**, size_t*)'
+   42 | extern size_t iconv (iconv_t __cd, char **__restrict __inbuf,
+      |                                    ~~~~~~~~~~~~~~~~~~^~~~~~~
+make[1]: *** [CMakeFiles/cmTC_fbede.dir/build.make:78: CMakeFiles/cmTC_fbede.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_fbede/fast] Error 2
+
+
+Source file was:
+
+    #include <iconv.h>
+    int main(){
+      iconv_t conv = 0;
+      const char* in = 0;
+      size_t ilen = 0;
+      char* out = 0;
+      size_t olen = 0;
+      iconv(conv, &in, &ilen, &out, &olen);
+      return 0;
+    }
+  
+Determining if the function fseek64 exists failed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_28ff7/fast && make  -f CMakeFiles/cmTC_28ff7.dir/build.make CMakeFiles/cmTC_28ff7.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_28ff7.dir/CheckFunctionExists.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=fseek64 -O2 -g  -std=c11 -o CMakeFiles/cmTC_28ff7.dir/CheckFunctionExists.c.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_28ff7
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28ff7.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=fseek64 -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_28ff7.dir/CheckFunctionExists.c.o -o cmTC_28ff7 
+CMakeFiles/cmTC_28ff7.dir/CheckFunctionExists.c.o: In function `main':
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CheckFunctionExists.c:17: undefined reference to `fseek64'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_28ff7.dir/build.make:99: cmTC_28ff7] Error 1
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_28ff7/fast] Error 2
+
+
+
+Determining if the function ftell64 exists failed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_6167f/fast && make  -f CMakeFiles/cmTC_6167f.dir/build.make CMakeFiles/cmTC_6167f.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6167f.dir/CheckFunctionExists.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=ftell64 -O2 -g  -std=c11 -o CMakeFiles/cmTC_6167f.dir/CheckFunctionExists.c.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6167f
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6167f.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=ftell64 -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_6167f.dir/CheckFunctionExists.c.o -o cmTC_6167f 
+CMakeFiles/cmTC_6167f.dir/CheckFunctionExists.c.o: In function `main':
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CheckFunctionExists.c:17: undefined reference to `ftell64'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_6167f.dir/build.make:99: cmTC_6167f] Error 1
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_6167f/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_NDIR_H failed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_0c742/fast && make  -f CMakeFiles/cmTC_0c742.dir/build.make CMakeFiles/cmTC_0c742.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0c742.dir/src.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -DHAVE_NDIR_H  -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g  -std=c11 -o CMakeFiles/cmTC_0c742.dir/src.c.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: ndir.h: No such file or directory
+    1 | #include <ndir.h>
+      |          ^~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_0c742.dir/build.make:78: CMakeFiles/cmTC_0c742.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_0c742/fast] Error 2
+
+
+Source file was:
+#include <ndir.h>
+
+int main(int argc, char *argv[])
+{
+  DIR* d = 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_SYS_NDIR_H failed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_75ba8/fast && make  -f CMakeFiles/cmTC_75ba8.dir/build.make CMakeFiles/cmTC_75ba8.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_75ba8.dir/src.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -DHAVE_SYS_NDIR_H  -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g  -std=c11 -o CMakeFiles/cmTC_75ba8.dir/src.c.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: sys/ndir.h: No such file or directory
+    1 | #include <sys/ndir.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_75ba8.dir/build.make:78: CMakeFiles/cmTC_75ba8.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_75ba8/fast] Error 2
+
+
+Source file was:
+#include <sys/ndir.h>
+
+int main(int argc, char *argv[])
+{
+  DIR* d = 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_b1edd/fast && make  -f CMakeFiles/cmTC_b1edd.dir/build.make CMakeFiles/cmTC_b1edd.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b1edd.dir/src.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD -I/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cairo-1.16.0-kiqp3ggk6nj43r2kw27vk25kci2qe4rc/include/cairo -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g  -std=c11 -o CMakeFiles/cmTC_b1edd.dir/src.c.o -c /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b1edd
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1edd.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE  -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_b1edd.dir/src.c.o -o cmTC_b1edd 
+CMakeFiles/cmTC_b1edd.dir/src.c.o: In function `main':
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c:11: undefined reference to `pthread_create'
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c:12: undefined reference to `pthread_detach'
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c:13: undefined reference to `pthread_cancel'
+/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp/src.c:14: undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_b1edd.dir/build.make:99: cmTC_b1edd] Error 1
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_b1edd/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake -f Makefile cmTC_e0a7a/fast && make  -f CMakeFiles/cmTC_e0a7a.dir/build.make CMakeFiles/cmTC_e0a7a.dir/build
+make[1]: Entering directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e0a7a.dir/CheckFunctionExists.c.o
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc   -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=pthread_create -O2 -g  -std=c11 -o CMakeFiles/cmTC_e0a7a.dir/CheckFunctionExists.c.o -c /software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e0a7a
+/software/spackages/linux-rocky8-x86_64/gcc-9.5.0/cmake-3.23.1-sojvxcphjs234slo6nzywxice4tvxr5d/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0a7a.dir/link.txt --verbose=1
+/software/spackages/linux-rocky8-x86_64/gcc-8.5.0/gcc-9.5.0-gykvdb4cm6mj7cexipwq3pgrhdihuzvz/bin/gcc -Wall -std=c99 -D_DEFAULT_SOURCE -DCHECK_FUNCTION_EXISTS=pthread_create -O2 -g   -Wl,--as-needed  CMakeFiles/cmTC_e0a7a.dir/CheckFunctionExists.c.o -o cmTC_e0a7a  -lpthreads 
+/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e0a7a.dir/build.make:99: cmTC_e0a7a] Error 1
+make[1]: Leaving directory '/home/cboatw2/Hist8510.3/8510-Worksheets/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/poppler-23.03.0/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_e0a7a/fast] Error 2
+
+
+
