@@ -338,6 +338,7 @@ Co-occurrence gives us a sense of words that appear in the same text, but not ne
 For this section we will make use of the `widyr` package. The function which helps us do this is the `pairwise_count()` function. It lets us count common pairs of words co-appearing within the same speech. This function might take a second as the resulting data frame will be incredibly large.
 
 ```{r}
+#| eval: false
 sotu_word_pairs <- sotu_whole %>% 
   mutate(speech_end = word(text, -5000, end = -1)) %>%  # extract last 100 words
   unnest_tokens(word, speech_end) %>%   # tokenize
@@ -349,6 +350,7 @@ head(sotu_word_pairs)
 
 Now we have a list of words that appear near each other in the text as well as the frequency. Once again this dataset is far too large to look at in a data frame. Instead, we'll create a network graph that shows us the relationships between words for any words that appear more than 200 times. I chose 200 after looking at the above dataset and seeing that the highest count was 239. You want the network graph to be manageable and not too large. 
 ```{r}
+#| eval: false
 library(igraph)
 library(ggraph)
 
@@ -365,6 +367,7 @@ sotu_word_pairs %>%
 (@) Create a network graph that shows the relationship between words that appear between 125 and 175 times.
 
 ```{r}
+#| eval: false
 library(igraph)
 library(ggraph)
 
@@ -396,9 +399,7 @@ You should use the rest of this worksheet to practice text analysis (and R more 
 
 
 Write up a research plan in the space below. What are you looking to explore?
-
-> Is there a way to identify the towns/regions of Indiana that identify more as frontier areas than others based on the way that Buffalo Bill's show was advertised? For instance, are "western" words (ie: indian, indians, riders, cowboys) more likely to be used in rural areas or areas on the borders or toward the western part of the state?
-I will attempt to plot the frequency of the words printed according to the location of the newspaper and see if any meaningful conclusions can be drawn.
+>I will look at the extraneous words. First I need to identify what those words are and then see how they relate to one another and Buffalo Bill, if possible.
 
 Lets download the data. 
 ```{r}
@@ -435,7 +436,103 @@ bb.whole <-
 glimpse(bb.whole)
 ```
 
-(@) Now you can begin your textual analysis for Dr. S. Add code chunks below and intersperse text to explain what you are doing and why in the text of the worksheet. 
+(@) Now you can begin your textual analysis for Dr. S. Add code chunks below and intersperse text to explain what you are doing and why in the text of the worksheet.
+
+```{r}
+#filter the df to show 'E' (extraneous) items
+bb.extra <- bb.whole %>%
+  filter(R_P_E == "E")
+
+bb.extra
+```
+
+```{r}
+#find term frequency for words appearing in bb.extra
+
+bb.extra.tf <- bb.extra %>%
+  unnest_tokens(word, text)  %>% 
+  count(word, sort = TRUE)  %>%
+  group_by(word) %>%
+  anti_join(stop_words) %>%
+
+print(bb.extra.tf)
+```
+
+```{r}
+#apply tf-idf to bb.extra
+
+bb.extra.words <- bb.extra %>%
+  unnest_tokens(word, text) %>%
+  count(Filename, word, sort = TRUE) %>%
+  ungroup()
+
+bb.extra.total.words <- bb.extra.words %>%
+  group_by(Filename) %>%
+  summarize(total=sum(n))
+
+bb.extra.words <- left_join(bb.extra.words, bb.extra.total.words)
+
+bb.extra.words
+
+bb.extra.freq.by.rank <- bb.extra.words %>%
+  group_by(Filename) %>%
+  mutate(rank = row_number(), 'term frequency'=n/total)
+bb.extra.freq.by.rank
+
+bb.extra.words <- bb.extra.words %>%
+  bind_tf_idf(word, Filename, n) %>%
+  anti_join(stop_words) %>%
+  arrange(desc(tf_idf))
+  
+bb.extra.words
+
+
+```
+
+```{r}
+bb.extra.words.top <- bb.extra.words %>%
+    group_by(Filename) %>%
+    top_n(1) %>%  # display the top tf-idf ranked word for each publication
+  print(n = Inf)
+```
+>Not sure the above did what I wanted it to do
+
+```{r}
+bb.extra.pairs <- bb.extra.words %>% 
+  #mutate(article_end = word(text, -5000, end = -1)) %>%  # extract last 100 words
+  #unnest_tokens(word, article_end) %>%   # tokenize
+  filter(!word %in% stop_words$word) %>%
+   filter(bb.extra.words$word != "bill" & bb.extra.words$word != "buffalo" & bb.extra.words$word != "bill's" & bb.extra.words$word != "cody" & bb.extra.words$word != "pg" & bb.extra.words$word != "wild" & bb.extra.words$word != "west") %>% # remove additional stopwords
+  pairwise_count(word, Filename, sort = TRUE, upper = FALSE) # don't include upper triangle of matrix
+
+head(bb.extra.pairs)
+```
+
+
+```{r}
+library(igraph)
+library(ggraph)
+
+bb.extra.pairs %>% 
+  filter(n >= 20) %>%
+  graph_from_data_frame() %>% #convert to graph
+  ggraph(layout = "fr") + # place nodes according to the force-directed algorithm of Fruchterman and Reingold
+  geom_edge_link(aes(edge_alpha = n, edge_width = n), edge_colour = "tomato") +
+  geom_node_point(size = 5) +
+  geom_node_text(aes(label = name), repel = TRUE, 
+                 point.padding = unit(0.2, "lines")) +
+  theme_void()
+```
+Write up a research plan in the space below. What are you looking to explore?
+> If the articles labelled as 'extraneous' would reveal a different aspect of the BBWW show than what would be expected from the promotional and reception articles. I was hopeful from the tf-idf that something would develop around the word 'critic'. It showed up twice in the top 10 list and judging from some of the other high ranking words I thought perhaps that these articles were going to be comprised of more negative views of the show. But none of those words appeared in the co-occurrence graph, so I'm still unsure what implications can be drawn.
+
+Below is what I originally submitted before I remember we were supposed to be answering one of your questions:
+
+Write up a research plan in the space below. What are you looking to explore?
+
+> Is there a way to identify the towns/regions of Indiana that identify more as frontier areas than others based on the way that Buffalo Bill's show was advertised? For instance, are "western" words (ie: indian, indians, riders, cowboys) more likely to be used in rural areas or areas on the borders or toward the western part of the state?
+I will attempt to plot the frequency of the words printed according to the location of the newspaper and see if any meaningful conclusions can be drawn.
+
 ```{r}
 bb.words <- bb.whole %>%
   unnest_tokens(word, text) %>% #unnests texts by single word
@@ -446,6 +543,7 @@ bb.words <- bb.whole %>%
 print (bb.words)
 
 ```
+
 ```{r}
 
 bb.words.by.newspaper <- bb.whole %>%
