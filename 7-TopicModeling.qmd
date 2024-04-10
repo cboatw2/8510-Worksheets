@@ -237,39 +237,68 @@ mb.top.terms %>%
 
 (@) What happens if you create a custom stopword list? How does this change the model?
 ```{r}
-mb.custom.tidy <- c("real", "mentioned", "vol", "ulm", "rath", "iii", "wis")
+mb.custom.tidy.list <- c("real", "mentioned", "vol", "ulm", "rath", "iii", "wis", "st", "mich", "ave", "cts")
 
 mb.custom.tidy <- tidy.mb.words %>%
-  filter(!word %in% mb.custom.tidy)
+  filter(!word %in% mb.custom.tidy.list) %>%
+  arrange (-n)
 
-#tidy_ac <- ac_whole %>%
-  #unnest_tokens(word, text) %>% 
-   #filter(str_detect(word, "[a-z']$"),
-         #!word %in% stop_words$word) %>% 
-  #filter(str_detect(word, "[a-z']$")) %>% 
-  #anti_join(stop_words)
 
-head (mb.custom.tidy)
-```
+mb.dtm.2 <- mb.custom.tidy %>% 
+  count(Filename, word) %>% 
+  cast_dtm(Filename, word, n)
 
-```{r}
-mb.top.terms <- mb.topics %>%
+
+mb.lda.2 <- LDA(mb.dtm.2, k = 25, control = list(seed = 12345))
+
+mb.topics.2 <- tidy(mb.lda.2, matrix = "beta")
+
+mb.top.terms.2 <- mb.topics.2 %>%
   arrange(desc(beta)) %>% 
   group_by(topic) %>% slice(1:5)
 
-mb.top.terms %>%
+mb.top.terms.2 %>%
   mutate(term = reorder_within(term, beta, topic)) %>%
   ggplot(aes(beta, term, fill = factor(topic))) +
   geom_col(show.legend = FALSE) +
   facet_wrap(~ topic, scales = "free") +
   scale_y_reordered()
 ```
+>Just removing a few words that I felt wouldn't be terribly important or were nonsense words totally changed the topic model. Honestly, I feel that the original results were better before I removed words.
+
 
 (@) Can you create a topic model for just the documents in the 1920s? How does that change the model? 
 ```{r}
+mb.1920 <- mb.whole %>% 
+  unnest_tokens(word, text) %>% 
+  filter(str_detect(word, "[a-z']$")) %>% 
+  anti_join(stop_words) %>%
+  filter(Year >= 1920 & Year <= 1929)
 
+
+mb.dtm.3 <- mb.1920 %>% 
+  count(Filename, word) %>% 
+  cast_dtm(Filename, word, n)
+
+
+mb.lda.3 <- LDA(mb.dtm.3, k = 5, control = list(seed = 12345))
+
+mb.topics.3 <- tidy(mb.lda.3, matrix = "beta")
+
+mb.top.terms.3 <- mb.topics.3 %>%
+  arrange(desc(beta)) %>% 
+  group_by(topic) %>% slice(1:5)
+
+mb.top.terms.3 %>%
+  mutate(term = reorder_within(term, beta, topic)) %>%
+  ggplot(aes(beta, term, fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, scales = "free") +
+  scale_y_reordered()
 
 ```
+
+>I initially left the model number at 25 which was far too many for the new model. 5 seems to be better, although there is a tremendous overlap in words in all 5 of the topics generated.
 
 (@) Now, lets return to the Buffalo Bill data from last week. You should be able to use topic modeling to address two of the research questions provided:
 
@@ -324,6 +353,7 @@ head(bb.dtm)
 bb.lda <- LDA(bb.dtm, k = 15, control = list(seed = 12345))
 bb.lda
 ```
+
 ```{r}
 bb.topics <- tidy(bb.lda, matrix = "beta")
 head(bb.topics)
@@ -342,6 +372,37 @@ bb.top.terms %>%
   scale_y_reordered()
 ```
 
+```{r}
+#add custom stop words to model
+bb.custom.tidy.list <- c("buffalo", "bill", "bill's", "wild", "west", "cody", "pg")
+
+bb.custom.tidy <- tidy.bb.words %>%
+  filter(!word %in% bb.custom.tidy.list) %>%
+  arrange (-n)
+
+
+bb.dtm.2 <- bb.custom.tidy %>% 
+  count(doc_id, word) %>% 
+  cast_dtm(doc_id, word, n)
+
+
+bb.lda.2 <- LDA(bb.dtm.2, k = 15, control = list(seed = 12345))
+
+bb.topics.2 <- tidy(bb.lda.2, matrix = "beta")
+
+bb.top.terms.2 <- bb.topics.2 %>%
+  arrange(desc(beta)) %>% 
+  group_by(topic) %>% slice(1:5)
+
+bb.top.terms.2 %>%
+  mutate(term = reorder_within(term, beta, topic)) %>%
+  ggplot(aes(beta, term, fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, scales = "free") +
+  scale_y_reordered()
+
+```
+
 
 * Can we detect some change over time in promotion language and reception language (marketing and reviewing)? Were there types of characters, scenarios, action promised in promotional material and/or noted in reviews earlier vs later?
 * What can be gleaned from the items tagged as extraneous as far as topics? These are news items that are somehow related to BBWW. Crime, finances, celebrity, etc.
@@ -352,10 +413,10 @@ To analyze this you should first generate a topic model for the buffalo bill dat
 To address the first research question, you'll need to plot topics over time. I would create three models, one for all of the data, one for promotion, and one for reception. What do we learn by doing this?
 
 ```{r}
-bb.documents <- tidy(bb.lda, matrix = "gamma")
+bb.documents <- tidy(bb.lda.2, matrix = "gamma")
 head(bb.documents)
 
-bb.all.topics.by.year <- full_join(bb.documents, metadata, by = join_by(document == Filename))
+bb.all.topics.by.year <- full_join(bb.documents, mb.metadata, by = join_by(document == Filename))
 ```
 
 ```{r}
@@ -365,7 +426,7 @@ ggplot(data=bb.all.topics.by.year, aes(x=issue_date, y=gamma)) + geom_bar(stat="
 
 ```{r}
 bb.p.topics.by.year <- bb.all.topics.by.year %>%
-  filter(R_P_E == "P")
+  filter(R_P_E == "P") %>%
   paste(bb.p.topics.by.year$month, " ", bb.p.topics.by.year$year, sep = "")
 ggplot(data=bb.p.topics.by.year, aes(x=issue_date, y=gamma)) + geom_bar(stat="identity") + facet_wrap(~ topic, scales = "free") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 ```
