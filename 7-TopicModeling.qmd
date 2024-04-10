@@ -302,6 +302,11 @@ mb.top.terms.3 %>%
 
 (@) Now, lets return to the Buffalo Bill data from last week. You should be able to use topic modeling to address two of the research questions provided:
 
+* Can we detect some change over time in promotion language and reception language (marketing and reviewing)? Were there types of characters, scenarios, action promised in promotional material and/or noted in reviews earlier vs later?
+* What can be gleaned from the items tagged as extraneous as far as topics? These are news items that are somehow related to BBWW. Crime, finances, celebrity, etc.
+
+To analyze this you should first generate a topic model for the buffalo bill data. Play with the number of topics until you find a number that feels about right for the dataset. I am guessing it'll be in the 8-15 range but you'll need to play with it to see what number gives you the best fit. 
+
 ```{r}
 download.file("https://github.com/dseefeldt/IndianaNewspapers/raw/main/bb-txt.zip", "bb-txt.zip")
 unzip("bb-txt.zip")
@@ -404,40 +409,106 @@ bb.top.terms.2 %>%
 ```
 
 
-* Can we detect some change over time in promotion language and reception language (marketing and reviewing)? Were there types of characters, scenarios, action promised in promotional material and/or noted in reviews earlier vs later?
-* What can be gleaned from the items tagged as extraneous as far as topics? These are news items that are somehow related to BBWW. Crime, finances, celebrity, etc.
-
-To analyze this you should first generate a topic model for the buffalo bill data. Play with the number of topics until you find a number that feels about right for the dataset. I am guessing it'll be in the 8-15 range but you'll need to play with it to see what number gives you the best fit. 
-
-
 To address the first research question, you'll need to plot topics over time. I would create three models, one for all of the data, one for promotion, and one for reception. What do we learn by doing this?
 
 ```{r}
 bb.documents <- tidy(bb.lda.2, matrix = "gamma")
-head(bb.documents)
+#head(bb.documents)
 
-bb.all.topics.by.year <- full_join(bb.documents, mb.metadata, by = join_by(document == Filename))
+bb.all.topics.by.year <- full_join(bb.documents, bb.metadata, by = join_by(document == Filename)) #%>%
+  #top_n(5)
+
+head(bb.all.topics.by.year)
 ```
 
 ```{r}
-bb.all.topics.by.year$issue_date <- paste(bb.all.topics.by.year$month, " ", bb.all.topics.by.year$year, sep = "")
-ggplot(data=bb.all.topics.by.year, aes(x=issue_date, y=gamma)) + geom_bar(stat="identity") + facet_wrap(~ topic, scales = "free") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+#bb.all.topics.by.year$FullDate <- paste(bb.all.topics.by.year$month, " ", bb.all.topics.by.year$year, sep = "")
+ggplot(data=bb.all.topics.by.year, aes(x=Date, y=gamma)) + geom_bar(stat ="identity") + facet_wrap(~ topic, scales = "free") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 ```
 
 ```{r}
 bb.p.topics.by.year <- bb.all.topics.by.year %>%
-  filter(R_P_E == "P") %>%
-  paste(bb.p.topics.by.year$month, " ", bb.p.topics.by.year$year, sep = "")
-ggplot(data=bb.p.topics.by.year, aes(x=issue_date, y=gamma)) + geom_bar(stat="identity") + facet_wrap(~ topic, scales = "free") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+  filter(R_P_E == "P")
+ggplot(data=bb.p.topics.by.year, aes(x=Date, y=gamma)) + geom_bar(stat="identity") + facet_wrap(~ topic, scales = "free") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 ```
+
+```{r}
+bb.r.topics.by.year <- bb.all.topics.by.year %>%
+  filter(R_P_E == "R")
+ggplot(data=bb.r.topics.by.year, aes(x=Date, y=gamma)) + geom_bar(stat="identity") + facet_wrap(~ topic, scales = "free") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+```
+
 
 For the second, a general topic model of the extraneous articles will be needed. 
 
 Add code blocks below as necessary.
 
+```{r}
+#topic model for entire corpus
+bb.top.terms <- bb.topics.2 %>%
+  arrange(desc(beta)) %>% 
+  group_by(topic) %>% slice(1:5)
+
+bb.top.terms %>%
+  mutate(term = reorder_within(term, beta, topic)) %>%
+  ggplot(aes(beta, term, fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, scales = "free") +
+  scale_y_reordered()
+```
+
+```{r}
+bb.tidy.join <- full_join(bb.custom.tidy, bb.metadata, by = c("doc_id" = "Filename")) %>% as_tibble()
+
+head(bb.tidy.join)
+```
+
+```{r}
+bb.beta.join <- full_join(bb.tidy.join, bb.topics.2, by = c("word" = "term"))
+
+head(bb.beta.join)
+```
+
+```{r}
+bb.e.dtm <- bb.beta.join %>% 
+  filter(R_P_E == "E")
+  count(doc_id, word) %>% 
+  cast_dtm(doc_id, word, n)
+
+bb.e.lda <- LDA(bb.e.dtm, k = 5, control = list(seed = 12345))
+bb.e.lda
+
+bb.e.topics <- tidy(bb.e.lda, matrix = "beta")
+
+bb.top.e.terms <- bb.beta.join %>%
+  arrange(desc(beta)) %>% 
+  group_by(topic) %>% slice(1:5)
+
+bb.top.e.terms %>%
+  mutate(term = reorder_within(word, beta, topic)) %>%
+  ggplot(aes(beta, word, fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, scales = "free") +
+  scale_y_reordered()
+```
+
+```{r}
+library(wordcloud)
+topic1 <- bb.e.topics %>% filter(topic == 2)
+wordcloud(topic1$term, topic1$beta, max.words = 100, random.order = FALSE,
+    rot.per = 0.3, colors = brewer.pal(6, "Dark2"))
+```
+
+```{r}
+bb.e.top.topics <- bb.e.topics %>% top_n(25) %>% arrange(desc(beta))
+
+print(bb.e.top.topics)
+```
+
 (@) Finally, when you are all done. Write up your findings. What research question did you focus on and what did you learn? 
 
-
+>I attempted to look at a topic model for the entire Buffalo Bill corpus and then filter out only the "Extraneous" articles and both a LDA plot as well as a word cloud to see if different terms emerged from those high level models. It seems to me that the entire corpus produces themes of location and characters (ie: cowboys, riders) and that the 'E' articles produces themes related more to time and perhaps relationships.
+>I don't feel that I was able to accomplish very much with the Buffalo Bill dataset using topic modeling
 
 **This was the final worksheet for this class. You did it - you learned to code in R! Congrats!**
 
