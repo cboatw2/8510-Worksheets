@@ -54,9 +54,11 @@ For topic modeling, we need a Document Term Matrix, or a DTM. Topic Modeling has
 
 ```{r}
 tidy_ac_words <- tidy_ac %>% count(filename, word)
+
+head(tidy_ac_words)
 ```
 
-Now we can use `cast_dtm()` to turn `tidy_mb_words` into a dtm. 
+Now we can use `cast_dtm()` to turn `tidy_ac_words` into a dtm. 
 
 ```{r}
 ac.dtm <- tidy_ac_words %>% 
@@ -64,7 +66,7 @@ ac.dtm <- tidy_ac_words %>%
   cast_dtm(filename, word, n)
 ```
 
-If you run `class(mb.dtm)` in your console you will notice that it now has a class of "DocumentTermMatrix". 
+If you run `class(ac.dtm)` in your console you will notice that it now has a class of "DocumentTermMatrix". 
 
 Now that we have a dtm, we can create a topic model. For this, we'll use the topic models package and the `LDA()` function. Take a minute and read the documentation for `LDA()`.
 
@@ -172,21 +174,64 @@ file.rename("txt", "mbtxt")
 mb.metadata <- read.csv("https://raw.githubusercontent.com/regan008/8510-TextAnalysisData/main/mb-metadata.csv")
 mb.meta <- as.data.frame(mb.metadata)
 
+mb.meta$Filename <- paste("MB_", mb.meta$Filename, sep = "")
+
 head(mb.meta)
 ```
 
 ```{r}
-mb.file.paths <- system.file("mbtext/")
+mb.file.paths <- list.files("mbtext/")
 mb.data.dir <- paste(getwd(), "/mbtxt", sep = "")
 mb.texts <- readtext(paste("mbtxt/", "*.txt", sep=""))
-mb.whole <- full_join(mb.meta, mb.texts, by = c("Filename" = "doc_id")) %>% as_tibble()
+mb.whole <- full_join(mb.meta, mb.texts,  by = join_by(Filename == doc_id)) %>% as_tibble()
 
 head(mb.whole)
 ```
 
+```{r}
+tidy.mb <- mb.whole %>%
+  unnest_tokens(word, text) %>% 
+  filter(str_detect(word, "[a-z']$")) %>% 
+  anti_join(stop_words)
+
+head (tidy.mb)
+```
+
+```{r}
+tidy.mb.words <- tidy.mb %>% count(Filename, word)
+
+head(tidy.mb.words)
+```
+
+```{r}
+mb.dtm <- tidy.mb.words %>% 
+  count(Filename, word) %>% 
+  cast_dtm(Filename, word, n)
+
+head(mb.dtm)
+```
+
+```{r}
+mb.lda <- LDA(mb.dtm, k = 25, control = list(seed = 12345))
+mb.lda
+```
+
+
 (@) What happens if you create a custom stopword list? How does this change the model?
 ```{r}
+mb.custom.stopwords <- c("editorial", "committee", "gym")
 
+mb.custom.tidy <- tidy.mb.words %>%
+  filter(!word %in% mb.custom.tidy)
+
+tidy_ac <- ac_whole %>%
+  unnest_tokens(word, text) %>% 
+   filter(str_detect(word, "[a-z']$"),
+         !word %in% stop_words$word) %>% 
+  filter(str_detect(word, "[a-z']$")) %>% 
+  anti_join(stop_words)
+
+head (tidy_ac)
 ```
 
 (@) Can you create a topic model for just the documents in the 1920s? How does that change the model? 
@@ -197,10 +242,65 @@ head(mb.whole)
 
 (@) Now, lets return to the Buffalo Bill data from last week. You should be able to use topic modeling to address two of the research questions provided:
 
+```{r}
+download.file("https://github.com/dseefeldt/IndianaNewspapers/raw/main/bb-txt.zip", "bb-txt.zip")
+unzip("bb-txt.zip")
+```
+
+```{r}
+# Metadata that includes info about each article.
+bb.metadata <- read.csv("https://raw.githubusercontent.com/dseefeldt/IndianaNewspapers/main/metadata.csv")
+
+#bb.tidy.meta <- bb.metadata %>% separate(Date, c("Month", "Day", "Year"))
+
+data_dir <- paste(getwd(), "/txt", sep = "")
+bb <- readtext(paste0(data_dir, "/*.txt"))
+
+bb.whole <- 
+  bb.metadata %>%  
+  arrange(Publication) %>% # sorts tidy version of bb.metadata (date seperated)
+  bind_cols(bb) %>% # combines with full texts from bb
+  as_tibble() 
+
+head(bb.whole)
+```
+
+```{r}
+bb.tidy <- bb.whole %>%
+  unnest_tokens(word, text) %>%
+  filter(str_detect(word, "[a-z']$")) %>% 
+  anti_join(stop_words)
+   #filter(word != "bill" & bb.whole$text != "buffalo" & bb.whole$text != "bill's" & bb.whole$text != "cody" & bb.whole$text != "pg" & bb.whole$text != "wild" & bb.whole$text != "west") %>%
+
+head(bb.tidy)
+```
+
+```{r}
+tidy.bb.words <- bb.tidy %>% count(doc_id, word)
+
+head(tidy.mb.words)
+```
+
+```{r}
+bb.dtm <- tidy.bb.words %>% 
+  count(doc_id, word) %>% 
+  cast_dtm(doc_id, word, n)
+
+head(bb.dtm)
+```
+
+```{r}
+bb.lda <- LDA(bb.dtm, k = 15, control = list(seed = 12345))
+bb.lda
+```
+
+
 * Can we detect some change over time in promotion language and reception language (marketing and reviewing)? Were there types of characters, scenarios, action promised in promotional material and/or noted in reviews earlier vs later?
 * What can be gleaned from the items tagged as extraneous as far as topics? These are news items that are somehow related to BBWW. Crime, finances, celebrity, etc.
 
 To analyze this you should first generate a topic model for the buffalo bill data. Play with the number of topics until you find a number that feels about right for the dataset. I am guessing it'll be in the 8-15 range but you'll need to play with it to see what number gives you the best fit. 
+
+
 
 To address the first research question, you'll need to plot topics over time. I would create three models, one for all of the data, one for promotion, and one for reception. What do we learn by doing this?
 
