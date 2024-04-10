@@ -120,7 +120,7 @@ ac.top.terms %>%
   mutate(term = reorder_within(term, beta, topic)) %>%
   ggplot(aes(beta, term, fill = factor(topic))) +
   geom_col(show.legend = FALSE) +
-  facet_wrap(~ topic, scales = "free") +
+  #facet_wrap(~ topic, scales = "free") +
   scale_y_reordered()
 ```
 
@@ -216,22 +216,53 @@ mb.lda <- LDA(mb.dtm, k = 25, control = list(seed = 12345))
 mb.lda
 ```
 
+```{r}
+mb.topics <- tidy(mb.lda, matrix = "beta")
+head(mb.topics)
+```
+
+```{r}
+mb.top.terms <- mb.topics %>%
+  arrange(desc(beta)) %>% 
+  group_by(topic) %>% slice(1:5)
+
+mb.top.terms %>%
+  mutate(term = reorder_within(term, beta, topic)) %>%
+  ggplot(aes(beta, term, fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, scales = "free") +
+  scale_y_reordered()
+```
+
 
 (@) What happens if you create a custom stopword list? How does this change the model?
 ```{r}
-mb.custom.stopwords <- c("editorial", "committee", "gym")
+mb.custom.tidy <- c("real", "mentioned", "vol", "ulm", "rath", "iii", "wis")
 
 mb.custom.tidy <- tidy.mb.words %>%
   filter(!word %in% mb.custom.tidy)
 
-tidy_ac <- ac_whole %>%
-  unnest_tokens(word, text) %>% 
-   filter(str_detect(word, "[a-z']$"),
-         !word %in% stop_words$word) %>% 
-  filter(str_detect(word, "[a-z']$")) %>% 
-  anti_join(stop_words)
+#tidy_ac <- ac_whole %>%
+  #unnest_tokens(word, text) %>% 
+   #filter(str_detect(word, "[a-z']$"),
+         #!word %in% stop_words$word) %>% 
+  #filter(str_detect(word, "[a-z']$")) %>% 
+  #anti_join(stop_words)
 
-head (tidy_ac)
+head (mb.custom.tidy)
+```
+
+```{r}
+mb.top.terms <- mb.topics %>%
+  arrange(desc(beta)) %>% 
+  group_by(topic) %>% slice(1:5)
+
+mb.top.terms %>%
+  mutate(term = reorder_within(term, beta, topic)) %>%
+  ggplot(aes(beta, term, fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, scales = "free") +
+  scale_y_reordered()
 ```
 
 (@) Can you create a topic model for just the documents in the 1920s? How does that change the model? 
@@ -278,7 +309,7 @@ head(bb.tidy)
 ```{r}
 tidy.bb.words <- bb.tidy %>% count(doc_id, word)
 
-head(tidy.mb.words)
+head(tidy.bb.words)
 ```
 
 ```{r}
@@ -293,6 +324,23 @@ head(bb.dtm)
 bb.lda <- LDA(bb.dtm, k = 15, control = list(seed = 12345))
 bb.lda
 ```
+```{r}
+bb.topics <- tidy(bb.lda, matrix = "beta")
+head(bb.topics)
+```
+
+```{r}
+bb.top.terms <- bb.topics %>%
+  arrange(desc(beta)) %>% 
+  group_by(topic) %>% slice(1:5)
+
+bb.top.terms %>%
+  mutate(term = reorder_within(term, beta, topic)) %>%
+  ggplot(aes(beta, term, fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, scales = "free") +
+  scale_y_reordered()
+```
 
 
 * Can we detect some change over time in promotion language and reception language (marketing and reviewing)? Were there types of characters, scenarios, action promised in promotional material and/or noted in reviews earlier vs later?
@@ -301,8 +349,26 @@ bb.lda
 To analyze this you should first generate a topic model for the buffalo bill data. Play with the number of topics until you find a number that feels about right for the dataset. I am guessing it'll be in the 8-15 range but you'll need to play with it to see what number gives you the best fit. 
 
 
-
 To address the first research question, you'll need to plot topics over time. I would create three models, one for all of the data, one for promotion, and one for reception. What do we learn by doing this?
+
+```{r}
+bb.documents <- tidy(bb.lda, matrix = "gamma")
+head(bb.documents)
+
+bb.all.topics.by.year <- full_join(bb.documents, metadata, by = join_by(document == Filename))
+```
+
+```{r}
+bb.all.topics.by.year$issue_date <- paste(bb.all.topics.by.year$month, " ", bb.all.topics.by.year$year, sep = "")
+ggplot(data=bb.all.topics.by.year, aes(x=issue_date, y=gamma)) + geom_bar(stat="identity") + facet_wrap(~ topic, scales = "free") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+```
+
+```{r}
+bb.p.topics.by.year <- bb.all.topics.by.year %>%
+  filter(R_P_E == "P")
+  paste(bb.p.topics.by.year$month, " ", bb.p.topics.by.year$year, sep = "")
+ggplot(data=bb.p.topics.by.year, aes(x=issue_date, y=gamma)) + geom_bar(stat="identity") + facet_wrap(~ topic, scales = "free") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+```
 
 For the second, a general topic model of the extraneous articles will be needed. 
 
